@@ -1,4 +1,0 @@
-#name : for ... in ... : ...
-# --
-for ${1:var} in ${2:collection}:
-    $3
