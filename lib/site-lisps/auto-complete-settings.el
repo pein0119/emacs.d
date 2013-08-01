@@ -23,7 +23,7 @@
   "Settings for `auto-complete'."
   (setq help-xref-following nil)
   
-  (add-to-list 'ac-dictionary-directories (concat  "/home/pein/.emacs.d/pein_lisp/lisps/auto-complete/dict"))
+  (add-to-list 'ac-dictionary-directories (concat  "~/.emacs.d/lib/auto-complete/dict"))
 
   (setq ac-auto-show-menu t
         ac-auto-start t
