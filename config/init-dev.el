@@ -8,6 +8,8 @@
 (add-to-list 'load-path "~/.emacs.d/lib/flymake-cursor/")
 (add-to-list 'load-path "~/.emacs.d/lib/ace-jump-buffer/")
 (add-to-list 'load-path "~/.emacs.d/lib/ace-jump-mode/")
+(add-to-list 'load-path "~/.emacs.d/lib/multiple-cursors/")
+(add-to-list 'load-path "~/.emacs.d/lib/popwin/")
 
 (require 'eval-after-load)
 (require 'ahei-misc)
@@ -20,6 +22,8 @@
 
 ;; 自动给你加上括号
 (require 'autopair-settings)
+
+
 
 ;; 所有的自动补全的配置
 (require 'all-auto-complete-settings)
@@ -114,6 +118,9 @@
 ;;快速跳转到某一buffer
 (require 'ace-jump-buffer-autoloads)
 
+;;添加多指针的功能
+;;(require 'multiple-cursors)
+
 ;;添加popwin,按C-g能让消息窗口消失
 (require 'popwin)
 (popwin-mode 1)
@@ -127,4 +134,3 @@
   (local-unset-key (kbd ":"))
   (local-set-key (kbd "*") 'c-electric-star))
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
-
