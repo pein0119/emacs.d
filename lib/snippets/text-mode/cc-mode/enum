@@ -1,0 +1,5 @@
+#name : enum ... { ... }
+# --
+typedef enum{
+    $0
+} ${1:name};
