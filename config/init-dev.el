@@ -126,11 +126,11 @@
 (popwin-mode 1)
 
 ;;smart-operator
-(require 'smart-operator)
-(defun my-c-mode-common-hook()
-  (smart-insert-operator-hook)
+;; (require 'smart-operator)
+;; (defun my-c-mode-common-hook()
+;;   (smart-insert-operator-hook)
 
-  (local-unset-key (kbd "."))
-  (local-unset-key (kbd ":"))
-  (local-set-key (kbd "*") 'c-electric-star))
-(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+;;   (local-unset-key (kbd "."))
+;;   (local-unset-key (kbd ":"))
+;;   (local-set-key (kbd "*") 'c-electric-star))
+;; (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)

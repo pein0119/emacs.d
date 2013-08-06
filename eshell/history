@@ -11,3 +11,8 @@ cd c
 ls
 gcc test.c -o test
 ./test
+ls
+gcc rand_test.c -o rand_test
+./rand_test 
+gcc rand_test.c -o rand_test
+./rand_test 
