@@ -1,0 +1,13 @@
+cd /home/pein/Documents/software/
+python -m SimpleHTTPServer
+ls
+clear
+clear
+ls
+ls
+cd ..
+ls
+cd c
+ls
+gcc test.c -o test
+./test

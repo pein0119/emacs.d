@@ -74,3 +74,5 @@
 (global-set-key [(control tab)] 'shk-tabbar-next)
 (global-set-key [(control shift tab)] 'shk-tabbar-prev)
 
+;; 添加sr-speedbar
+(require 'speedbar-extension)
