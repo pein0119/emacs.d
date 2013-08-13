@@ -16,3 +16,54 @@ gcc rand_test.c -o rand_test
 ./rand_test 
 gcc rand_test.c -o rand_test
 ./rand_test 
+ls
+gcc rand_test.c -o rand_test
+./rand_test 
+cd .
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+ls
+git commit -a -m "erase "smart-operator""
+git push -u orgin master
+git push -u origin master
+git push -u origin master
+git push -u origin master
+ls
+gcc rand_test.c -o rand_test
+./rand_test 
+gcc rand_test.c -o rand_test
+./rand_test 
+ls
+cat data.txt 
+./rand_test 
+cat data.txt 
+10
+gcc rand_test.c -o rand_test
+./rand_test 
+gcc rand_test.c -o rand_test
+./rand_test 
+temp = -847409715
+gcc rand_test.c -o rand_test
+./rand_test 
+cat data.txt 
+./rand_test 
+gcc rand_test.c -o rand_test
+./rand_test 
+ls
+df -h data.txt 
+dh
+du
+du -h data.txt 
+ls
+gcc heap.c -o heap
+./heap 
+ls
+du -h result.txt 
+ls
+gcc rand_test.c -o rand_test
+./rand_test 
+gcc heap.c -o heap
+./heap 

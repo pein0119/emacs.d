@@ -81,3 +81,39 @@
   (if (and (not (region-active-p)) (not (looking-at "[ \t]*$")))
       (comment-or-uncomment-region (line-beginning-position) (line-end-position))
     (comment-dwim arg)))
+
+;; 自动为 C/C++ 的头文件添加 #define 保护。
+(define-auto-insert
+  '("\\.\\([Hh]\\|hh\\|hxx\\|hpp\\)\\'" . "C / C++ header")
+  '((upcase (concat "_"
+                    (replace-regexp-in-string
+                     "[^a-zA-Z0-9]" "_"
+                     (format "%s" (file-name-nondirectory buffer-file-name)))))
+    "#ifndef " str \n
+    "#define " str "\n\n"
+    _ "\n\n#endif"))
+
+;; 复制和剪切当前行
+;; copy region or whole line(global-set-key "\M-w"
+(lambda ()
+  (interactive)
+  (if mark-active
+      (kill-ring-save (region-beginning)
+      (region-end))
+    (progn
+     (kill-ring-save (line-beginning-position)
+     (line-end-position))
+     (message "copied line")))))
+
+
+;; kill region or whole line
+(global-set-key "\C-w"
+(lambda ()
+  (interactive)
+  (if mark-active
+      (kill-region (region-beginning)
+   (region-end))
+    (progn
+     (kill-region (line-beginning-position)
+  (line-end-position))
+     (message "killed line")))))
