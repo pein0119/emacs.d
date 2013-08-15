@@ -67,3 +67,9 @@ gcc rand_test.c -o rand_test
 ./rand_test 
 gcc heap.c -o heap
 ./heap 
+ls
+ls
+gcc url.c -o url
+./url 
+gcc url.c -o url
+./url 
