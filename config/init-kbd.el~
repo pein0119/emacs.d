@@ -97,5 +97,5 @@
 
 ;;ace-jump-mode 的快捷键
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-(define-key global-map (kbd "C-c b") 'ace-jump-buffer)
+(define-key global-map (kbd "C-x b") 'ace-jump-buffer)
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
