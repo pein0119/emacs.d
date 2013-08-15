@@ -76,3 +76,7 @@
 
 ;; 添加sr-speedbar
 (require 'speedbar-extension)
+
+;;光标改变
+(require 'cursor-change)
+(cursor-change-mode t)

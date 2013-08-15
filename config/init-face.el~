@@ -76,4 +76,6 @@
 
 ;; 添加sr-speedbar
 (require 'speedbar-extension)
-(setq sr-speedbar-right-side nil)
+
+;;光标改变
+(require 'cursor-change)

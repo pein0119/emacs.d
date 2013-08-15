@@ -82,3 +82,8 @@
 (setq time-stamp-format "%04y-%02m-%02d %02H:%02M:%02S %:a by %u")
 (add-hook 'write-file-hooks 'time-stamp)
 
+;; 不要闪烁光标, 烦不烦啊
+(blink-cursor-mode -1)
+
+;;光标改变
+(require 'cursor-change)
