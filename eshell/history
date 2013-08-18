@@ -1,86 +1,3 @@
-cat data.txt 
-./rand_test 
-cat data.txt 
-10
-gcc rand_test.c -o rand_test
-./rand_test 
-gcc rand_test.c -o rand_test
-./rand_test 
-temp = -847409715
-gcc rand_test.c -o rand_test
-./rand_test 
-cat data.txt 
-./rand_test 
-gcc rand_test.c -o rand_test
-./rand_test 
-ls
-df -h data.txt 
-dh
-du
-du -h data.txt 
-ls
-gcc heap.c -o heap
-./heap 
-ls
-du -h result.txt 
-ls
-gcc rand_test.c -o rand_test
-./rand_test 
-gcc heap.c -o heap
-./heap 
-ls
-ls
-gcc url.c -o url
-./url 
-gcc url.c -o url
-./url 
-ls
-ls
-chmod +x visualise.py 
-ls
-./visualise.py 
-./visualise.py Quick
-ls
-./game.py 
-ls
-cd Django/
-ls
-ls
-rm *
-ls
-django-admin.py startproject first_django
-ls
-cd first_django/
-ls
-ls
-cd first_django/
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd ls
-ls
-cd Django/
-ls
-cd first_django/
-s
-ls
-cd first_django/
-ls
-ls
-ls
-cd 
-ls
-ls
-ls
-./sniffer.py 
-ls
-cp ~/Pictures/1.jpg .
-ls
-ls
 ls
 cd 
 ls
@@ -125,4 +42,87 @@ ls
 ls
 ls
 ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+lsls
+ls
+ls
+ls
+ls
+ls
+s
+s
+ls
+cd
+ls
+ls 0a
+ls -a 
+ls
+cd .emacs.d/
+ls
+git commit -a -m "ctrl-l clear eshell buffer"
+ls
+git push -u origin master
+ls
+ls
+ls
+ls
+ls	   ll
+ls
+cd lib/
+ls
+git add expand-region/
+ls
+git commit -a -m "add expand-region"
+ls
+git push -u origin master
+ls
+la
+xsls
+ls
+cd expand-region/
+ls
+cask
+ls
+cd Cask
+ls
+ls
+./run-tests.sh
+ll
+ls -l
+ls
+./run-travis-ci.sh
+cask
+su
+ls
+ls
+ls							 
+ls
+cd 
+cd ..
+ls
+cd pein/
+yum search cask
+yum update
+su
+yum update
+exit
+ls
+cd ls
+sl
+ls
+cd .
+ls
+cd
+ls
+cd .emacs.d/
 ls

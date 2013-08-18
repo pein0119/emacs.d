@@ -8,6 +8,8 @@
 (add-to-list 'load-path "~/.emacs.d/lib/flymake-cursor/")
 (add-to-list 'load-path "~/.emacs.d/lib/ace-jump-buffer/")
 (add-to-list 'load-path "~/.emacs.d/lib/ace-jump-mode/")
+(add-to-list 'load-path "~/.emacs.d/lib/multiple-cursors/")
+(add-to-list 'load-path "~/.emacs.d/lib/popwin/")
 
 (require 'eval-after-load)
 (require 'ahei-misc)
@@ -20,6 +22,8 @@
 
 ;; 自动给你加上括号
 (require 'autopair-settings)
+
+
 
 ;; 所有的自动补全的配置
 (require 'all-auto-complete-settings)
@@ -36,6 +40,7 @@
 (setq c-argdecl-indent 4)
 (setq c-label-offset -4)
 (setq c-basic-offset 4)
+
 ;; 回车后indent
 (eal-define-keys
  `(lisp-mode-map emacs-lisp-mode-map lisp-interaction-mode-map sh-mode-map
@@ -114,17 +119,27 @@
 ;;快速跳转到某一buffer
 (require 'ace-jump-buffer-autoloads)
 
+;;添加多指针的功能
+;;(require 'multiple-cursors)
+
 ;;添加popwin,按C-g能让消息窗口消失
 (require 'popwin)
 (popwin-mode 1)
 
 ;;smart-operator
-(require 'smart-operator)
-(defun my-c-mode-common-hook()
-  (smart-insert-operator-hook)
+;; (require 'smart-operator)
+;; (defun my-c-mode-common-hook()
+;;   (smart-insert-operator-hook)
 
-  (local-unset-key (kbd "."))
-  (local-unset-key (kbd ":"))
-  (local-set-key (kbd "*") 'c-electric-star))
-(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+;;   (local-unset-key (kbd "."))
+;;   (local-unset-key (kbd ":"))
+;;   (local-set-key (kbd "*") 'c-electric-star))
+;; (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
+;; 安装php+-mode
+(require 'php+-mode)
+(php+-mode-setup)
+
+;; 安装expand-region
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)

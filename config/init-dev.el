@@ -10,6 +10,7 @@
 (add-to-list 'load-path "~/.emacs.d/lib/ace-jump-mode/")
 (add-to-list 'load-path "~/.emacs.d/lib/multiple-cursors/")
 (add-to-list 'load-path "~/.emacs.d/lib/popwin/")
+(add-to-list 'load-path "~/.emacs.d/lib/expand-region/")
 
 (require 'eval-after-load)
 (require 'ahei-misc)
@@ -139,3 +140,7 @@
 ;; 安装php+-mode
 (require 'php+-mode)
 (php+-mode-setup)
+
+;; 安装expand-region
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
