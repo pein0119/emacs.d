@@ -75,7 +75,7 @@
 	   [(20130619)
 	    ((emacs
 	      (24 1)))
-	    "Improved JavaScript editing mode" single])
+	    "Improved JavaScript editing mode" tar])
  (jumpc .
 	[(3 0)
 	 nil "jump to previous insertion points" single])
@@ -156,6 +156,9 @@
 	((queue
 	  (0 1)))
 	"Tagged non-deterministic finite-state automata" single])
+ (temp-buffer-browse .
+		     [(1 0)
+		      nil "temp buffer browse mode" single])
  (trie .
        [(0 2 6)
 	((tNFA
@@ -174,7 +177,7 @@
        nil "View Large Files" single])
  (websocket .
 	    [(1 1)
-	     nil "Emacs WebSocket client and server" single])
+	     nil "Emacs WebSocket client and server" tar])
  (windresize .
 	     [(0 1)
 	      nil "Resize windows interactively" single])

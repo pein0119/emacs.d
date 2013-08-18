@@ -135,3 +135,7 @@
 ;;   (local-unset-key (kbd ":"))
 ;;   (local-set-key (kbd "*") 'c-electric-star))
 ;; (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+;; 安装php+-mode
+(require 'php+-mode)
+(php+-mode-setup)

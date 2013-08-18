@@ -802,7 +802,7 @@
 	    [(20130620 1413)
 	     nil "Rip Clojure namespaces apart and rebuild them. [github]" single])
  (skewer-mode .
-	      [(20130809 1518)
+	      [(20130817 1831)
 	       ((simple-httpd
 		 (1 4 0))
 		(js2-mode
@@ -822,7 +822,7 @@
 	     [(20121205 1449)
 	      nil "Simplified access to the system clipboard [github]" single])
  (simple-httpd .
-	       [(20130527 1257)
+	       [(20130817 1557)
 		nil "pure elisp HTTP server [github]" single])
  (simple-call-tree+ .
 		    [(20130512 16)
@@ -969,7 +969,7 @@
 	      (0 0 3)))
 	    "s operations for buffers [github]" single])
  (s .
-    [(20130816 2326)
+    [(20130818 822)
      nil "The long lost Emacs string manipulation library. [github]" single])
  (rvm .
       [(20130521 902)
@@ -1180,7 +1180,7 @@
 		[(20130614 1235)
 		 nil "Project oriented automatic builder and error highlighter, flymake for projects [github]" tar])
  (projectile .
-	     [(20130812 1803)
+	     [(20130817 1905)
 	      ((s
 		(1 6 0))
 	       (dash
@@ -1271,7 +1271,7 @@
 	   [(20130709 819)
 	    nil "Major mode for Pig files [github]" single])
  (php-mode .
-	   [(20130816 1745)
+	   [(20130817 346)
 	    nil "Major mode for editing PHP code [github]" single])
  (php-eldoc .
 	    [(20130328 1526)
@@ -1608,7 +1608,7 @@
 		 [(20130131 720)
 		  nil "Open a junk (memo) file to try-and-error [wiki]" single])
  (omnisharp .
-	    [(20130816 1659)
+	    [(20130817 2324)
 	     ((json
 	       (1 2))
 	      (dash
@@ -1671,6 +1671,9 @@
  (nyan-mode .
 	    [(20120710 1922)
 	     nil "Nyan Cat shows position in current buffer in mode-line. [github]" tar])
+ (nummm-mode .
+	     [(20130817 1808)
+	      nil "Display the number of minor modes instead of their names [github]" single])
  (nsis-mode .
 	    [(20130723 1548)
 	     nil "NSIS-mode [github]" tar])
@@ -1692,7 +1695,7 @@
 		     (9)))
 		   "decompilation extension for nrepl.el [github]" single])
  (nrepl .
-	[(20130815 1629)
+	[(20130818 1126)
 	 ((clojure-mode
 	   (2 0 0))
 	  (cl-lib
@@ -1999,7 +2002,7 @@
 			       [(20130730 1032)
 				nil "Advice for magit-log-edit-commit [github]" single])
  (magit .
-	[(20130817 306)
+	[(20130818 149)
 	 ((cl-lib
 	   (0 3))
 	  (git-commit-mode
@@ -2443,7 +2446,7 @@
 			       [(20130228 956)
 				nil "Complete SPACE or HYPHEN when type SPACE in ido [github]" single])
  (ido-at-point .
-	       [(20130816 2132)
+	       [(20130818 22)
 		((emacs
 		  (24))
 		 (cl-lib
@@ -2923,7 +2926,7 @@
 	      [(20130803 2130)
 	       nil "Manage Git hunks straight from the buffer [github]" single])
  (git-gutter .
-	     [(20130613 2232)
+	     [(20130818 815)
 	      nil "Port of Sublime Text plugin GitGutter [github]" single])
  (git-dwim .
 	   [(20130130 2150)
@@ -3618,7 +3621,7 @@
 		  [(20130410 17)
 		   nil "Some extension for eldoc [wiki]" single])
  (eldoc-eval .
-	     [(20130817 655)
+	     [(20130817 1329)
 	      nil "Enable eldoc support when minibuffer is in use. [github]" single])
  (el-x .
        [(20130418 2335)
@@ -3898,7 +3901,7 @@
 		[(20130417 1034)
 		 nil "Search the word at point with Dash [github]" single])
  (dash .
-       [(20130817 53)
+       [(20130817 1130)
 	nil "A modern list library for Emacs. [github]" tar])
  (dart-mode .
 	    [(20121218 1449)
@@ -3989,18 +3992,18 @@
 		      (2 2 7)))
 		    "company-mode completion back-end for inf-ruby [github]" single])
  (company .
-	  [(20130816 155)
+	  [(20130817 1552)
 	   nil "Modular in-buffer completion framework [github]" tar])
  (commander .
-	    [(20130816 2115)
+	    [(20130817 1503)
 	     ((s
 	       (1 6 0))
 	      (dash
-	       (1 6 0))
+	       (2 0 0))
 	      (cl-lib
 	       (0 3))
 	      (f
-	       (0 4 1)))
+	       (0 6 0)))
 	     "Emacs command line parser [github]" single])
  (column-marker .
 		[(20121128 843)
@@ -4069,7 +4072,7 @@
 	       [(20130812 1530)
 		nil "Major mode for Clojure code [github]" single])
  (clojure-cheatsheet .
-		     [(20130814 2234)
+		     [(20130816 1706)
 		      ((helm
 			(1 5 3))
 		       (nrepl
@@ -4345,7 +4348,7 @@
 			  [(20120811 837)
 			   nil "Automatically byte-compile when saved [wiki]" single])
  (audio-notes-mode .
-		   [(20130720 30)
+		   [(20130817 2251)
 		    nil "Play audio notes synced from somewhere else. [github]" single])
  (auctex-latexmk .
 		 [(20130620 2312)
@@ -4377,7 +4380,7 @@
 	      [(20080905 553)
 	       nil "major mode for editing Apache configuration files [wiki]" single])
  (aok .
-      [(20130815 756)
+      [(20130817 845)
        nil "various useful ways to do `multi-occur' [wiki]" single])
  (anything-git-grep .
 		    [(20130609 1111)

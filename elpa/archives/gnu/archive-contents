@@ -156,6 +156,9 @@
 	((queue
 	  (0 1)))
 	"Tagged non-deterministic finite-state automata" single])
+ (temp-buffer-browse .
+		     [(1 0)
+		      nil "temp buffer browse mode" single])
  (trie .
        [(0 2 6)
 	((tNFA

@@ -113,3 +113,9 @@ ls
 ls
 cd 
 ls
+ls
+ls
+./sniffer.py 
+ls
+cp ~/Pictures/1.jpg .
+ls

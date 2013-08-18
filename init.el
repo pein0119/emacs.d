@@ -2,9 +2,9 @@
 
 (load "init-base.el")
 (load "init-face.el")
-;; (load "init-func.el")
-;; (load "init-dev.el")
-;; (load "init-elpa.el")
-;; (load "init-kbd.el")
+(load "init-func.el")
+(load "init-dev.el")
+(load "init-elpa.el")
+(load "init-kbd.el")
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
