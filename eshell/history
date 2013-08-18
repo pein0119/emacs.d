@@ -1,21 +1,4 @@
 ls
-cd 
-ls
-cd .emacs.d/
-ls
-cd lib/
-ls
-ls
-git clone https://github.com/magnars/expand-region.el
-ls
-cd expand-region.el/
-ls
-ls
-cd ..
-ls
-ls
-mv expand-region.el expaand-region
-ls
 mv expaand-region expand-region
 ls
 cd expand-region/
@@ -125,4 +108,21 @@ ls
 cd
 ls
 cd .emacs.d/
+ls
+ls
+cd 
+ls
+l
+ls
+ls
+cd .emacs.d/
+ls
+ls
+git commit -a -m "configure expand-region"
+sl
+ls
+git push -u origin master
+ls
+cd ..
+git add .
 ls
