@@ -1264,6 +1264,13 @@
  (pkgbuild-mode .
 		[(20130816 1020)
 		 nil "Interface to the ArchLinux package manager [github]" single])
+ (pkg-info .
+	   [(20130817 2334)
+	    ((dash
+	      (1 6 0))
+	     (s
+	      (1 6 0)))
+	    "Information about packages [github]" tar])
  (pivotal-tracker .
 		  [(20130319 2233)
 		   nil "Interact with Pivotal Tracker through its API [github]" single])
@@ -1608,7 +1615,7 @@
 		 [(20130131 720)
 		  nil "Open a junk (memo) file to try-and-error [wiki]" single])
  (omnisharp .
-	    [(20130817 2324)
+	    [(20130818 1108)
 	     ((json
 	       (1 2))
 	      (dash
@@ -2171,7 +2178,7 @@
        [(20130207 31)
 	nil "communcate with the KWin window manager [github]" single])
  (kv .
-     [(20130618 1212)
+     [(20130818 1137)
       nil "key/value data structure functions [github]" single])
  (kmacro-decision .
 		  [(20130713 2239)
@@ -3190,7 +3197,7 @@
 		    (0 1)))
 		  "A flymake handler for coffee script [github]" single])
  (flycheck-d-unittest .
-		      [(20130816 1717)
+		      [(20130818 1800)
 		       ((flycheck
 			 (0 14))
 			(dash
@@ -3206,18 +3213,8 @@
 			      (24 1)))
 			    "Change mode line color with Flycheck status [github]" single])
  (flycheck .
-	   [(20130816 2200)
-	    ((s
-	      (1 6 0))
-	     (dash
-	      (1 6 0))
-	     (f
-	      (0 6 0))
-	     (cl-lib
-	      (0 3))
-	     (emacs
-	      (24 1)))
-	    "On-the-fly syntax checking (Flymake done right) [github]" tar])
+	   [(20130818 1211)
+	    nil "No description available. [github]" tar])
  (flx-ido .
 	  [(20130814 2156)
 	   ((flx
@@ -3314,7 +3311,7 @@
 	      (0 3 1)))
 	   "File activity logger [github]" single])
  (f .
-    [(20130816 2025)
+    [(20130818 1057)
      ((s
        (1 6 1))
       (dash
@@ -3901,8 +3898,8 @@
 		[(20130417 1034)
 		 nil "Search the word at point with Dash [github]" single])
  (dash .
-       [(20130817 1130)
-	nil "A modern list library for Emacs. [github]" tar])
+       [(20130818 1143)
+	nil "A modern list library for Emacs [github]" tar])
  (dart-mode .
 	    [(20121218 1449)
 	     nil "Major mode for editing Dart files [github]" single])

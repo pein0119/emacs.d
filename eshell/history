@@ -1,42 +1,3 @@
-cd /home/pein/Documents/software/
-python -m SimpleHTTPServer
-ls
-clear
-clear
-ls
-ls
-cd ..
-ls
-cd c
-ls
-gcc test.c -o test
-./test
-ls
-gcc rand_test.c -o rand_test
-./rand_test 
-gcc rand_test.c -o rand_test
-./rand_test 
-ls
-gcc rand_test.c -o rand_test
-./rand_test 
-cd .
-ls
-cd 
-ls
-cd .emacs.d/
-ls
-ls
-git commit -a -m "erase "smart-operator""
-git push -u orgin master
-git push -u origin master
-git push -u origin master
-git push -u origin master
-ls
-gcc rand_test.c -o rand_test
-./rand_test 
-gcc rand_test.c -o rand_test
-./rand_test 
-ls
 cat data.txt 
 ./rand_test 
 cat data.txt 
@@ -118,4 +79,50 @@ ls
 ./sniffer.py 
 ls
 cp ~/Pictures/1.jpg .
+ls
+ls
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+cd lib/
+ls
+ls
+git clone https://github.com/magnars/expand-region.el
+ls
+cd expand-region.el/
+ls
+ls
+cd ..
+ls
+ls
+mv expand-region.el expaand-region
+ls
+mv expaand-region expand-region
+ls
+cd expand-region/
+ls
+ls
+cd ..
+ls
+du -h expand-region/
+ls
+du -h expand-region/
+cd ..
+ls
+ls
+cd ..
+cd .emacs.d/
+ls
+cd ..
+ls
+cd .emacs.d/
+ls
+ls
+ls
+ls
+ls
+ls
+ls
 ls

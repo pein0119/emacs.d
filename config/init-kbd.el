@@ -29,7 +29,10 @@
     (eshell-truncate-buffer)))
 (global-set-key [(f6)] 'open-eshell-other-buffer)
 (global-set-key [C-f6]'eshell)
-(global-set-key [S-f6] 'my-eshell-clear-buffer)
+;; (global-set-key [S-f6] 'my-eshell-clear-buffer)
+(defun my-eshell-hook()
+  (local-set-key "\C-l" 'my-eshell-clear-buffer))
+(add-hook 'eshell-mode-hook 'my-eshell-hook)
 
 ;; 在行首 C-k 时，同时删除该行。
 (setq-default kill-whole-line t)
