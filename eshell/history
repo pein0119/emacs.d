@@ -73,3 +73,43 @@ gcc url.c -o url
 ./url 
 gcc url.c -o url
 ./url 
+ls
+ls
+chmod +x visualise.py 
+ls
+./visualise.py 
+./visualise.py Quick
+ls
+./game.py 
+ls
+cd Django/
+ls
+ls
+rm *
+ls
+django-admin.py startproject first_django
+ls
+cd first_django/
+ls
+ls
+cd first_django/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ls
+ls
+cd Django/
+ls
+cd first_django/
+s
+ls
+cd first_django/
+ls
+ls
+ls
+cd 
+ls

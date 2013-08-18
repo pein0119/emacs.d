@@ -102,3 +102,6 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (define-key global-map (kbd "C-x b") 'ace-jump-buffer)
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+
+;;column-marker 快捷键
+(global-set-key [?\C-c ?m] 'column-marker-1)

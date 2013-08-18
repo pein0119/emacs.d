@@ -40,6 +40,7 @@
 (setq c-argdecl-indent 4)
 (setq c-label-offset -4)
 (setq c-basic-offset 4)
+
 ;; 回车后indent
 (eal-define-keys
  `(lisp-mode-map emacs-lisp-mode-map lisp-interaction-mode-map sh-mode-map
