@@ -1,17 +1,4 @@
 ls
-mv expaand-region expand-region
-ls
-cd expand-region/
-ls
-ls
-cd ..
-ls
-du -h expand-region/
-ls
-du -h expand-region/
-cd ..
-ls
-ls
 cd ..
 cd .emacs.d/
 ls
@@ -126,3 +113,16 @@ ls
 cd ..
 git add .
 ls
+ls
+git commit -a -m "diminish mode-line clutter"
+ls
+ls
+git push -u origin master
+ls
+ls
+git add
+git add *
+ls
+git commit -a -m "add func in init-func.el"
+git push -u origin master
+git push -u origin master
