@@ -107,4 +107,12 @@
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 ;;column-marker 快捷键
-(global-set-key [?\C-c ?m] 'column-marker-1)
+;; (global-set-key [?\C-c ?m] 'column-marker-1)
+
+;; expand-region 快捷键
+(global-set-key (kbd "C-c w") 'er/mark-word)
+(global-set-key (kbd "C-c s") 'er/mark-symbol)
+(global-set-key (kbd "C-c i p") 'er/mark-inside-pairs)
+(global-set-key (kbd "C-c o p") 'er/mark-outside-pairs)
+(global-set-key (kbd "C-c i q") 'er/mark-inside-quotes)
+(global-set-key (kbd "C-c o q") 'er/mark-outside-quotes)

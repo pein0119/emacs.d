@@ -82,9 +82,9 @@
 (cursor-change-mode t)
 
 ;;高亮80列
-(require 'column-marker)
-(add-hook 'cc-mode-hook (lambda () (interactive) (column-marker-1 80)))
-(add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))
+;; (require 'column-marker)
+;; (add-hook 'cc-mode-hook (lambda () (interactive) (column-marker-1 80)))
+;; (add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))
 
 ;; Diminish modeline clutter
 (require 'diminish)

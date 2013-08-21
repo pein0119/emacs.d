@@ -1,6 +1,9 @@
 ;;设置emacs全屏的快捷键为f11
 (global-set-key [f11] 'fullscreen-toggle)
 
+;;设置sr-speedbar的快捷键
+(global-set-key [(f7)] 'sr-speedbar-open)
+(global-set-key [S-f7] 'sr-speedbar-close)
 ;; `gdb'
 (global-set-key [(f5)] 'gdb)
 
@@ -26,7 +29,10 @@
     (eshell-truncate-buffer)))
 (global-set-key [(f6)] 'open-eshell-other-buffer)
 (global-set-key [C-f6]'eshell)
-(global-set-key [S-f6] 'my-eshell-clear-buffer)
+;; (global-set-key [S-f6] 'my-eshell-clear-buffer)
+(defun my-eshell-hook()
+  (local-set-key "\C-l" 'my-eshell-clear-buffer))
+(add-hook 'eshell-mode-hook 'my-eshell-hook)
 
 ;; 在行首 C-k 时，同时删除该行。
 (setq-default kill-whole-line t)
@@ -99,3 +105,21 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (define-key global-map (kbd "C-x b") 'ace-jump-buffer)
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+
+;;column-marker 快捷键
+;; (global-set-key [?\C-c ?m] 'column-marker-1)
+
+;; expand-region 快捷键
+er/mark-word
+er/mark-symbol
+er/mark-method-call
+er/mark-inside-quotes
+er/mark-outside-quotes
+er/mark-inside-pairs
+er/mark-outside-pairs
+(global-set-key (kbd "C-c w") 'er/mark-word)
+(global-set-key (kbd "C-c s") 'er/mark-symbol)
+(global-set-key (kbd "C-c i p") 'er/mark-inside-pairs)
+(global-set-key (kbd "C-c o p") 'er/mark-outside-pairs)
+(global-set-key (kbd "C-c i q") 'er/mark-inside-quotes)
+(global-set-key (kbd "C-c o q") 'er/mark-outside-quotes)
