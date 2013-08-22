@@ -147,5 +147,5 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; 安装python-mode
-(setq py-install-directory "~/.emacs.d/lib/python-mode/")
-(require 'python-mode)
+;; (setq py-install-directory "~/.emacs.d/lib/python-mode/")
+;; (require 'python-mode)
