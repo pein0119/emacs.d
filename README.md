@@ -29,18 +29,18 @@ emacs.d
 * auto-complete 自动补全插件
 * color-theme 配置emacs主题的插件
 * flymake-cursor 配合flymake使用，在minibuffer显示出错信息
+* flymake-eays   配合flymake使用
 * multiple-cursors 类似于subtext的多指针功能，能同时编辑多处(暂时未配置)
 * parenthese 所有关于括号的配置(跳转到匹配的括号，匹配括号高亮，括号自动补全)
+* popwin ctrl-g可以关闭弹出的缓冲区
 * pyflakes python的flymake,能检测python的语法错误(有时候不太准确)
-* pylint(也是python的插件，暂时未配置)
 * pylookup 强烈推荐的插件，可以方便的查找python手册
 * site-lisps 存放一些收集到的比较零散的emacs配置文件
 * snippet yasnippet的代码片段
 * tabbar-master 为emacs加入类似浏览器标签的功能(暂时未使用)
 * themes 存放我的emacs主题的地方
-* virtualenv 也是python的配置文件(暂时未使用)
 * yasnippet emacs的代码片段功能
-
+* expand-region 快速选中区域
 # 安装方法 #
 
 ## 下载本配置文件 ##

@@ -1,31 +1,3 @@
-ls
-git push -u origin master
-ls
-la
-xsls
-ls
-cd expand-region/
-ls
-cask
-ls
-cd Cask
-ls
-ls
-./run-tests.sh
-ll
-ls -l
-ls
-./run-travis-ci.sh
-cask
-su
-ls
-ls
-ls							 
-ls
-cd 
-cd ..
-ls
-cd pein/
 yum search cask
 yum update
 su
@@ -125,4 +97,32 @@ ls
 ls
 ls
 ./test_pycomplete.py 
+ls
+ls
+ls
+ls
+ls
+ls
+cd ..
+cd ..
+cd .emerald/
+cd ..
+ls
+cd .emacs.d/
+ls
+ls
+git commit -a -m "add python-mode"
+git push -u origin master
+git add .
+s
+ls
+ls
+ls
+ls
+ls
+ls
+git commit -a -m "erase python-mode"
+ls
+ls
+git push -u origin master
 ls
