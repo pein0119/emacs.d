@@ -1,59 +1,4 @@
 ls
-cd ..
-cd .emacs.d/
-ls
-cd ..
-ls
-cd .emacs.d/
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-lsls
-ls
-ls
-ls
-ls
-ls
-s
-s
-ls
-cd
-ls
-ls 0a
-ls -a 
-ls
-cd .emacs.d/
-ls
-git commit -a -m "ctrl-l clear eshell buffer"
-ls
-git push -u origin master
-ls
-ls
-ls
-ls
-ls	   ll
-ls
-cd lib/
-ls
-git add expand-region/
-ls
-git commit -a -m "add expand-region"
-ls
 git push -u origin master
 ls
 la
@@ -126,3 +71,58 @@ ls
 git commit -a -m "add func in init-func.el"
 git push -u origin master
 git push -u origin master
+ls
+sls
+ls
+ls
+ls
+cd ..
+ls
+cd ls
+ls
+wget www.baidu.com
+ls
+ls
+ls
+rm myserver.py\~ 
+ls
+ls
+cd ..
+cd Documents/
+ls
+cd study/
+ls
+cd emacs/
+ls
+ls
+cp python-mode.el-6.1.1 ~/.emacs.d/lib/python-mode
+cp -r python-mode.el-6.1.1 ~/.emacs.d/lib/python-mode
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+ls
+cd lib/
+ls
+cd python-mode/
+ls
+ls
+ls
+python setup.py 
+ls
+cat setup.py 
+cd extensions/
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd completion/
+ls
+ls
+ls
+ls
+./test_pycomplete.py 
+ls

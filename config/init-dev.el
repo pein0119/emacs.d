@@ -11,6 +11,7 @@
 (add-to-list 'load-path "~/.emacs.d/lib/multiple-cursors/")
 (add-to-list 'load-path "~/.emacs.d/lib/popwin/")
 (add-to-list 'load-path "~/.emacs.d/lib/expand-region/")
+(add-to-list 'load-path "~/.emacs.d/lib/python-mode/")
 
 (require 'eval-after-load)
 (require 'ahei-misc)
@@ -144,3 +145,7 @@
 ;; 安装expand-region
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
+
+;; 安装python-mode
+(setq py-install-directory "~/.emacs.d/lib/python-mode/")
+(require 'python-mode)

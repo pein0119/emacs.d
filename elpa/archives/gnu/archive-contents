@@ -1,6 +1,6 @@
 (1
  (ack .
-      [(1 2)
+      [(1 3)
        nil "Interface to ack-like source code search tools" tar])
  (adaptive-wrap .
 		[(0 5)
@@ -60,7 +60,7 @@
 			[(1 1)
 			 nil "Parse and browse f90 interfaces" single])
  (ggtags .
-	 [(0 6 6)
+	 [(0 6 7)
 	  nil "GNU Global source code tagging system" single])
  (heap .
        [(0 3)
@@ -119,7 +119,7 @@
 	   [(1 0)
 	    nil "Support for OWL Manchester Notation" single])
  (org .
-      [(20130812)
+      [(20130819)
        nil "Outline-based notes management and organizer" tar])
  (quarter-plane .
 		[(0 1)
