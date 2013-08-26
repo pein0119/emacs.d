@@ -1,12 +1,3 @@
-yum search cask
-yum update
-su
-yum update
-exit
-ls
-cd ls
-sl
-ls
 cd .
 ls
 cd
@@ -126,3 +117,12 @@ ls
 ls
 git push -u origin master
 ls
+cd .emacs.d/
+lsc
+git add .
+ls
+ls
+cd lib/
+ls
+git commit -a -m "modify README.md"
+git push -u origin master
