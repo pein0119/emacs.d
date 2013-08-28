@@ -1,6 +1,3 @@
-cd .
-ls
-cd
 ls
 cd .emacs.d/
 ls
@@ -126,3 +123,6 @@ cd lib/
 ls
 git commit -a -m "modify README.md"
 git push -u origin master
+ls
+git add init-base.el 
+ls
