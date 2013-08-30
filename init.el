@@ -6,7 +6,4 @@
 (load "init-dev.el")
 (load "init-elpa.el")
 (load "init-kbd.el")
-(put 'downcase-region 'disabled nil)
-(put 'upcase-region 'disabled nil)
-(put 'erase-buffer 'disabled nil)
-(put 'set-goal-column 'disabled nil)
+

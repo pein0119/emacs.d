@@ -139,8 +139,8 @@
 ;; (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
 ;; 安装php+-mode
-(require 'php+-mode)
-(php+-mode-setup)
+;; (require 'php+-mode)
+;; (php+-mode-setup)
 
 ;; 安装expand-region
 (require 'expand-region)

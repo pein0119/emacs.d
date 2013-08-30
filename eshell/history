@@ -1,61 +1,3 @@
-ls
-cd .emacs.d/
-ls
-ls
-cd 
-ls
-l
-ls
-ls
-cd .emacs.d/
-ls
-ls
-git commit -a -m "configure expand-region"
-sl
-ls
-git push -u origin master
-ls
-cd ..
-git add .
-ls
-ls
-git commit -a -m "diminish mode-line clutter"
-ls
-ls
-git push -u origin master
-ls
-ls
-git add
-git add *
-ls
-git commit -a -m "add func in init-func.el"
-git push -u origin master
-git push -u origin master
-ls
-sls
-ls
-ls
-ls
-cd ..
-ls
-cd ls
-ls
-wget www.baidu.com
-ls
-ls
-ls
-rm myserver.py\~ 
-ls
-ls
-cd ..
-cd Documents/
-ls
-cd study/
-ls
-cd emacs/
-ls
-ls
-cp python-mode.el-6.1.1 ~/.emacs.d/lib/python-mode
 cp -r python-mode.el-6.1.1 ~/.emacs.d/lib/python-mode
 ls
 cd 
@@ -125,4 +67,62 @@ git commit -a -m "modify README.md"
 git push -u origin master
 ls
 git add init-base.el 
+ls
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+git commit -a -m "show buffer-file-name on the frame"
+git push -u origin master
+git push -u origin master
+cd ..
+ls
+cd ..
+ls
+cd pein/
+ls
+ls
+ls
+ls
+cd ..
+lsc
+ls
+cd
+ls
+cd .emacs.d/
+ls
+cd ..
+ls
+cd .emacs.d/
+ls
+cd config/
+ls
+ls
+cd ls
+ls
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+ls 
+ls
+ls
+cd .emacs.d/
+ls
+ls
+rm init.el\~
+ls
+ls
+cat tramp 
+uname -a
+ls
+lcs
+ls
+ls
+ls -a
+ls
+lsdc
 ls
