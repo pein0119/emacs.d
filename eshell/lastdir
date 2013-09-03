@@ -10,7 +10,6 @@
 /su:root@localhost:/home/pein
 ~/workspace
 /home/pein/workspace/c
-/home/pein/Documents
 /home/pein/Documents/study
 /home/pein/Documents/study/emacs
 /home/pein/.emacs.d/lib
@@ -23,8 +22,12 @@
 /home/pein/.emacs.d/lib
 /home
 /home
-/home/pein/workspace/git/compiler/parser
 /home/pein/.emacs.d/config
+/home/pein/.emacs.d/config
+/home/pein/workspace/git/compiler/parser
 /home/pein/.emacs.d
 /home/pein
-/home/pein/.emacs.d
+/home/pein/Documents
+/home/pein/Documents/cdecl-blocks-2.5
+/home/pein/.emacs.d/config
+/home/pein/.emacs.d/lib/snippets/text-mode/cc-mode

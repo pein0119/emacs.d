@@ -1,34 +1,3 @@
-cp -r python-mode.el-6.1.1 ~/.emacs.d/lib/python-mode
-ls
-cd 
-ls
-cd .emacs.d/
-ls
-ls
-cd lib/
-ls
-cd python-mode/
-ls
-ls
-ls
-python setup.py 
-ls
-cat setup.py 
-cd extensions/
-ls
-ls
-ls
-ls
-cd ..
-ls
-cd completion/
-ls
-ls
-ls
-ls
-./test_pycomplete.py 
-ls
-ls
 ls
 ls
 ls
@@ -125,4 +94,35 @@ ls
 ls -a
 ls
 lsdc
+ls
+ls
+git add .
+ls
+ls
+git commit -a -m "remove php+ mode"
+git push -u origin master
+cd 
+ls
+cd .emacs.d/
+ls
+git branch
+python
+ipython
+cd 
+ls
+cd Documents/
+ls
+cd cdecl-blocks-2.5/
+ls
+ls
+make
+ls
+./cdecl int
+makefile test
+make test
+ls
+git add init-dev.el 
+ls
+ls
+git add .
 ls

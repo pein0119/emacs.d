@@ -36,12 +36,14 @@
 (setq default-tab-width 4) 
 ;;以下设置缩进
 ;;用tab缩进
-(setq c-indent-level 4)
-(setq c-continued-statement-offset 4)
-(setq c-brace-offset -4)
-(setq c-argdecl-indent 4)
-(setq c-label-offset -4)
-(setq c-basic-offset 4)
+;; (setq c-indent-level 4)
+;; (setq c-continued-statement-offset 4)
+;; (setq c-brace-offset -4)
+;; (setq c-argdecl-indent 4)
+;; (setq c-label-offset -4)
+;; (setq c-basic-offset 4)
+(setq c-default-style "linux"
+	  c-basic-offset 4)
 
 ;; 回车后indent
 (eal-define-keys
