@@ -11,7 +11,7 @@
 ;;设置emacs主题
 (require 'cyberpunk)
 (color-theme-cyberpunk)
-
+;;(require 'color-theme-solarized)
 ;;设置模式栏
 ;;显示时间
 (display-time-mode t)

@@ -1,60 +1,3 @@
-ls
-ls
-ls
-ls
-cd ..
-cd ..
-cd .emerald/
-cd ..
-ls
-cd .emacs.d/
-ls
-ls
-git commit -a -m "add python-mode"
-git push -u origin master
-git add .
-s
-ls
-ls
-ls
-ls
-ls
-ls
-git commit -a -m "erase python-mode"
-ls
-ls
-git push -u origin master
-ls
-cd .emacs.d/
-lsc
-git add .
-ls
-ls
-cd lib/
-ls
-git commit -a -m "modify README.md"
-git push -u origin master
-ls
-git add init-base.el 
-ls
-ls
-cd 
-ls
-cd .emacs.d/
-ls
-git commit -a -m "show buffer-file-name on the frame"
-git push -u origin master
-git push -u origin master
-cd ..
-ls
-cd ..
-ls
-cd pein/
-ls
-ls
-ls
-ls
-cd ..
 lsc
 ls
 cd
@@ -125,4 +68,61 @@ git add init-dev.el
 ls
 ls
 git add .
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+ls
+git commit -a -u "change c style && modify snippets"
+git commit -a -m "change c style && modify snippets"
+git push -u origin master
+git push -u origin master
+ls
+l
+ls
+	    
+ls
+	    
+ls
+ls
+s
+ls
+ls
+ls
+ls
+cd
+ls
+cd .emacs.d/
+ls
+ls
+git push -u origin master
+git push -u origin master
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+cd lib
+ls
+cd themes/
+s
+ls
+ls
+ls
+cd ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+cd ls
+ls
+cd c
+ls
+s
+ls
+ls
 ls

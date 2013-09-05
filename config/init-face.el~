@@ -9,9 +9,9 @@
 (global-linum-mode t)
 
 ;;设置emacs主题
-(require 'cyberpunk)
-(color-theme-cyberpunk)
-
+;; (require 'cyberpunk)
+;; (color-theme-cyberpunk)
+(require 'color-theme-solarized)
 ;;设置模式栏
 ;;显示时间
 (display-time-mode t)
@@ -82,10 +82,9 @@
 (cursor-change-mode t)
 
 ;;高亮80列
-(require 'column-marker)
-(add-hook 'cc-mode-hook (lambda () (interactive) (column-marker-1 80)))
-(add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))
+;; (require 'column-marker)
+;; (add-hook 'cc-mode-hook (lambda () (interactive) (column-marker-1 80)))
+;; (add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))
 
 ;; Diminish modeline clutter
 (require 'diminish)
-(diminish 'yas/minor-mode)
