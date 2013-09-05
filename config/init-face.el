@@ -88,3 +88,6 @@
 
 ;; Diminish modeline clutter
 (require 'diminish)
+
+;;添加 rainbow-mode
+(require 'rainbow-mode)

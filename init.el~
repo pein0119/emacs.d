@@ -4,5 +4,6 @@
 (load "init-face.el")
 (load "init-func.el")
 (load "init-dev.el")
+(load "init-elpa.el")
 (load "init-kbd.el")
 

@@ -1,5 +1,3 @@
-/home/pein/workspace/python/sniff
-/home/pein/workspace/web
 /home/pein/.emacs.d/lib/expand-region.el
 /home/pein/.emacs.d/lib/expand-region
 /su:root@localhost:/home/pein/.emacs.d/lib/expand-region
@@ -22,11 +20,13 @@
 /home/pein/.emacs.d/config
 /home/pein/.emacs.d/lib/snippets/text-mode/cc-mode
 ~/Documents/study/emacs/emacs-color-theme-solarized-master
-/home/pein
-/home/pein/.emacs.d
 /home/pein/.emacs.d/lib
 /home/pein/.emacs.d/lib/themes
 /home/pein/workspace/c
 /home/pein/workspace/c
-~/workspace
 /home/pein/workspace/c
+/home/pein/.emacs.d
+/home/pein/.emacs.d/config
+~/workspace
+/home/pein
+/home/pein/.emacs.d

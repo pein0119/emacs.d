@@ -1,37 +1,3 @@
-lsc
-ls
-cd
-ls
-cd .emacs.d/
-ls
-cd ..
-ls
-cd .emacs.d/
-ls
-cd config/
-ls
-ls
-cd ls
-ls
-ls
-ls
-cd ..
-ls
-cd ..
-ls
-ls 
-ls
-ls
-cd .emacs.d/
-ls
-ls
-rm init.el\~
-ls
-ls
-cat tramp 
-uname -a
-ls
-lcs
 ls
 ls
 ls -a
@@ -124,5 +90,39 @@ cd c
 ls
 s
 ls
+ls
+ls
+ls
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+ls
+ls
+cd config/
+ls
+git rm init-elpa.el 
+ls
+ls
+ls
+ls
+git commit -a -m "rm init-elpa.el && add theme solarized"
+git push -u origin master
+git push -u origin master
+ls
+ls
+ls
+ls
+ls
+cd
+ls
+cd .emacs.d/
+ls
+git add .
+ls
+ls
+ls
+l
 ls
 ls
