@@ -96,3 +96,7 @@
 (setq frame-title-format
 '("%S" (buffer-file-name "%f"
 (dired-directory dired-directory "%b"))))
+
+;; 设置默认编码
+(setq default-buffer-file-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)

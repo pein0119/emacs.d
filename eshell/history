@@ -1,47 +1,3 @@
-ls
-ls
-ls -a
-ls
-lsdc
-ls
-ls
-git add .
-ls
-ls
-git commit -a -m "remove php+ mode"
-git push -u origin master
-cd 
-ls
-cd .emacs.d/
-ls
-git branch
-python
-ipython
-cd 
-ls
-cd Documents/
-ls
-cd cdecl-blocks-2.5/
-ls
-ls
-make
-ls
-./cdecl int
-makefile test
-make test
-ls
-git add init-dev.el 
-ls
-ls
-git add .
-ls
-cd 
-ls
-cd .emacs.d/
-ls
-ls
-git commit -a -u "change c style && modify snippets"
-git commit -a -m "change c style && modify snippets"
 git push -u origin master
 git push -u origin master
 ls
@@ -124,5 +80,49 @@ ls
 ls
 ls
 l
+ls
+ls
+ls
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+ls
+cd lib/
+ls
+cd snippets/
+ls
+ls
+cd text-mode/
+ls
+cd python-mode/
+ls
+git add headx 
+ls
+cd
+cd workspace/
+ls
+cd python/
+ls
+chmod +x new.py 
+./new.py 
+python new.py 
+./new.py 
+./new.py 
+chmod +x new.py 
+./new.py 
+ls
+l
+ls
+ls
+cd 
+ls
+cd .emacs.d/
+ls
+ls
+cd config/
+ls
+git add .
 ls
 ls
