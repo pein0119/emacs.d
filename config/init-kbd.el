@@ -81,13 +81,13 @@
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 
 ;;将当前行向上，向下移动
-(global-set-key (kbd "<C-S-down>") 'move-line-down)
-(global-set-key (kbd "<C-S-up>") 'move-line-up)
+(global-set-key (kbd "<M-down>") 'move-line-down)
+(global-set-key (kbd "<M-up>") 'move-line-up)
 
 ;;C-return 在当前行上新开一行
 ;;C-S-return 在当前行下新开一行
 (global-set-key (kbd "<C-return>") 'open-line-below)
-(global-set-key (kbd "<C-S-return>") 'open-line-above)
+(global-set-key (kbd "<C-M-return>") 'open-line-above)
 
 ;;代码注释的功能
 (global-set-key "\M-;" 'qiang-comment-dwim-line) 

@@ -1,6 +1,3 @@
-/su:root@localhost:/home/pein/.emacs.d/lib/expand-region
-/su:root@localhost:/home/pein
-/home/pein/Documents/study
 /home/pein/Documents/study/emacs
 /home/pein/.emacs.d/lib/python-mode/extensions
 /home/pein/.emacs.d/lib/python-mode
@@ -21,13 +18,16 @@
 /home/pein/workspace/c
 /home/pein/workspace/c
 /home/pein/.emacs.d/config
-~/workspace
 /home/pein/.emacs.d/lib
 /home/pein/.emacs.d/lib/snippets
 /home/pein/.emacs.d/lib/snippets/text-mode
 /home/pein/.emacs.d/lib/snippets/text-mode/python-mode
 /home/pein/workspace
 /home/pein/workspace/python
+/home/pein/.emacs.d/config
+/home/pein/workspace/python
+/home/pein/workspace/c
+~/workspace
 /home/pein
 /home/pein/.emacs.d
 /home/pein/.emacs.d/config
