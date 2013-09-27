@@ -34,14 +34,6 @@
 ;;先设置缩进
 ;;设置TAB宽度为4
 (setq default-tab-width 4) 
-;;以下设置缩进
-;;用tab缩进
-;; (setq c-indent-level 4)
-;; (setq c-continued-statement-offset 4)
-;; (setq c-brace-offset -4)
-;; (setq c-argdecl-indent 4)
-;; (setq c-label-offset -4)
-;; (setq c-basic-offset 4)
 (setq c-default-style "linux"
 	  c-basic-offset 4)
 
@@ -130,24 +122,7 @@
 (require 'popwin)
 (popwin-mode 1)
 
-;;smart-operator
-;; (require 'smart-operator)
-;; (defun my-c-mode-common-hook()
-;;   (smart-insert-operator-hook)
-
-;;   (local-unset-key (kbd "."))
-;;   (local-unset-key (kbd ":"))
-;;   (local-set-key (kbd "*") 'c-electric-star))
-;; (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
-
-;; 安装php+-mode
-;; (require 'php+-mode)
-;; (php+-mode-setup)
 
 ;; 安装expand-region
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
-
-;; 安装python-mode
-;; (setq py-install-directory "~/.emacs.d/lib/python-mode/")
-;; (require 'python-mode)
