@@ -87,7 +87,7 @@
 ;; (add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))
 
 ;; Diminish modeline clutter
-(require 'diminish)
+;; (require 'diminish)
 
 ;;添加 rainbow-mode
-(require 'rainbow-mode)
+;; (require 'rainbow-mode)
