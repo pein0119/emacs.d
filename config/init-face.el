@@ -90,4 +90,4 @@
 ;; (require 'diminish)
 
 ;;添加 rainbow-mode
-;; (require 'rainbow-mode)
+(require 'rainbow-mode)
