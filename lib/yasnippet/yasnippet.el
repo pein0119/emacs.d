@@ -138,7 +138,7 @@
 ;;; Code:
 
 (require 'cl)
-(require 'assoc)
+;; (require 'assc)
 (require 'easymenu)
 
 
