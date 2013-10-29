@@ -110,7 +110,7 @@
 ;; (global-set-key [?\C-c ?m] 'column-marker-1)
 
 ;; expand-region 快捷键
-(global-set-key (kbd "c-c w") 'er/mark-word)
+(global-set-key (kbd "C-c w") 'er/mark-word)
 (global-set-key (kbd "C-c s") 'er/mark-symbol)
 (global-set-key (kbd "C-c i p") 'er/mark-inside-pairs)
 (global-set-key (kbd "C-c o p") 'er/mark-outside-pairs)

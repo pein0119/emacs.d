@@ -1,7 +1,9 @@
 tramp
 *~
 /eshell/
+/elpa/
 /auto-save-list/
 ac-comphist.dat
 *.elc
-session.~
+session.*
+bookmarks
