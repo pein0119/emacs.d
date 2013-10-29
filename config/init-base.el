@@ -100,3 +100,11 @@
 ;; 设置默认编码
 (setq default-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+;; no backup files
+(setq make-backup-files nil)				
+
+; Don't Ignore case when completing file names
+(setq read-file-name-completion-ignore-case nil)
+
+(defalias 'qrr 'query-replace-regexp)
