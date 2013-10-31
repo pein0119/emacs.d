@@ -1,6 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/lib/site-lisps/")
 (add-to-list 'load-path "~/.emacs.d/lib/color-theme/")
 (add-to-list 'load-path "~/.emacs.d/lib/themes/")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/lib/themes/")
 
 ;;设置emacs最大化
 (require 'fullscreen)
@@ -9,11 +10,12 @@
 (global-linum-mode t)
 
 ;;设置emacs主题
-(require 'cyberpunk)
-(color-theme-cyberpunk)
-;;(require 'color-theme-solarized)
-;;设置模式栏
-;;显示时间
+;; (require 'cyberpunk)
+;; (color-theme-cyberpunk)
+
+(setq molokai-theme-kit t)
+(require 'molokai-theme)
+
 (display-time-mode t)
 ;;显示列号
 (column-number-mode t)

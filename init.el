@@ -5,4 +5,3 @@
 (load "init-func.el")
 (load "init-dev.el")
 (load "init-kbd.el")
-;; test
