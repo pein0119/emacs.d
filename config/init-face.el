@@ -83,7 +83,7 @@
 ;; (require 'cursor-change)
 ;; (cursor-change-mode t)
 (setq-default cursor-type 'bar) ; 设置光标为竖线 
-
+(set-cursor-color "red")		
 ;;高亮80列
 ;; (require 'column-marker)
 ;; (add-hook 'cc-mode-hook (lambda () (interactive) (column-marker-1 80)))
