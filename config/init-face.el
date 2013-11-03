@@ -82,6 +82,7 @@
 ;;光标改变
 ;; (require 'cursor-change)
 ;; (cursor-change-mode t)
+(setq-default cursor-type 'bar) ; 设置光标为竖线 
 
 ;;高亮80列
 ;; (require 'column-marker)
