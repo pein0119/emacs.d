@@ -80,8 +80,8 @@
 (require 'speedbar-extension)
 
 ;;光标改变
-(require 'cursor-change)
-(cursor-change-mode t)
+;; (require 'cursor-change)
+;; (cursor-change-mode t)
 
 ;;高亮80列
 ;; (require 'column-marker)
