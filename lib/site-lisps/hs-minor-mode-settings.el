@@ -1,6 +1,6 @@
 ;; -*- Emacs-Lisp -*-
 
-;; Time-stamp: <2010-09-18 23:42:19 Saturday by taoshanwen>
+;; Time-stamp: <2013-11-15 19:46:47 Friday by pein>
 
 (am-add-hooks
  `(c-mode-common-hook lisp-mode-hook emacs-lisp-mode-hook java-mode-hook python-mode-hook)
@@ -75,7 +75,7 @@
 (global-set-key (kbd "C-c e") 'hs-hide-block)
 (global-set-key (kbd "C-c E") 'hs-hide-all)
 (global-set-key (kbd "C-c s") 'hs-show-block)
-(global-set-key (kbd "C-c E") 'move-line-down)
+;; (global-set-key (kbd "C-c E") 'move-line-down)
 
 (eval-after-load "hideshow"
   '(hs-minor-mode-settings))
