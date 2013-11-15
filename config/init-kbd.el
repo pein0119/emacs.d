@@ -111,7 +111,7 @@
 
 ;; expand-region 快捷键
 (global-set-key (kbd "C-c w") 'er/mark-word)
-(global-set-key (kbd "C-c s") 'er/mark-symbol)
+(global-set-key (kbd "C-c m") 'er/mark-symbol)
 (global-set-key (kbd "C-c i p") 'er/mark-inside-pairs)
 (global-set-key (kbd "C-c o p") 'er/mark-outside-pairs)
 (global-set-key (kbd "C-c i q") 'er/mark-inside-quotes)

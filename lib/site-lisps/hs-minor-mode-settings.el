@@ -1,6 +1,6 @@
 ;; -*- Emacs-Lisp -*-
 
-;; Time-stamp: <2013-11-15 19:46:47 Friday by pein>
+;; Time-stamp: <2013-11-15 20:05:18 Friday by pein>
 
 (am-add-hooks
  `(c-mode-common-hook lisp-mode-hook emacs-lisp-mode-hook java-mode-hook python-mode-hook)
