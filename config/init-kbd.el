@@ -4,7 +4,8 @@
 ;;设置sr-speedbar的快捷键
 (global-set-key [(f7)] 'sr-speedbar-open)
 (global-set-key [S-f7] 'sr-speedbar-close)
-;; `gdb'
+
+;; 'gdb'
 (global-set-key [(f5)] 'gdb)
 
 ;;窗口的切换,光标移到上下左右窗口
@@ -15,7 +16,7 @@
 
 ;;对eshell的一些配置
 ;;目的是开一个shell的小buffer，用于更方便地测试程序(也就是运行程序了)，我经常会用到。
-;;f8就是另开一个buffer然后打开shell，C-f6则是在当前的buffer打开shell,shift+f6清空eshell
+;;ctrl-[f6] 在当前窗口打开eshell,[f6]分割窗口打开eshell, ctrl-l清屏
 (defun open-eshell-other-buffer ()
   "Open eshell in other buffer"
   (interactive)
@@ -105,9 +106,6 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (define-key global-map (kbd "C-x b") 'ace-jump-buffer)
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
-
-;;column-marker 快捷键
-;; (global-set-key [?\C-c ?m] 'column-marker-1)
 
 ;; expand-region 快捷键
 (global-set-key (kbd "C-c w") 'er/mark-word)

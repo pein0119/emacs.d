@@ -113,9 +113,6 @@
 ;;快速跳转到某一buffer
 (require 'ace-jump-buffer-autoloads)
 
-;;添加多指针的功能
-;;(require 'multiple-cursors)
-
 ;;添加popwin,按C-g能让消息窗口消失
 (require 'popwin)
 (popwin-mode 1)
