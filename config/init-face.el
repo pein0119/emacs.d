@@ -16,7 +16,7 @@
 (setq molokai-theme-kit t)
 (require 'molokai-theme)
 
-(display-time-mode t)
+;;(display-time-mode t)
 ;;显示列号
 (column-number-mode t)
 

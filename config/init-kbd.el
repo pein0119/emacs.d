@@ -45,22 +45,22 @@
 
 ;; 快速移动
 ;;向下移动五行，绑定到 C-S-n
-(global-set-key (kbd "C-S-n")
+(global-set-key (kbd "C-M-n")
                 (lambda ()
                   (interactive)
                   (ignore-errors (next-line 5))))
 ;;向上移动五行
-(global-set-key (kbd "C-S-p")
+(global-set-key (kbd "C-M-p")
                 (lambda ()
                   (interactive)
                   (ignore-errors (previous-line 5))))
 ;;向前移动五行
-(global-set-key (kbd "C-S-f")
+(global-set-key (kbd "C-M-f")
                 (lambda ()
                   (interactive)
                   (ignore-errors (forward-char 5))))
 ;;向后移动五行
-(global-set-key (kbd "C-S-b")
+(global-set-key (kbd "C-M-b")
                 (lambda ()
                   (interactive)
                   (ignore-errors (backward-char 5))))

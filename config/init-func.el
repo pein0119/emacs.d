@@ -55,16 +55,16 @@
   (newline)
 
 ;; 自动为 C/C++ 的头文件添加 #define 保护。
-;; (define-auto-insert
-;;   '("\\.\\([Hh]\\|hh\\|hxx\\|hpp\\)\\'" . "C / C++ header")
-;;   '((upcase (concat "_"
-;;                     (replace-regexp-in-string
-;;                      "[^a-zA-Z0-9]" "_"
-;;                      (format "%s" (file-name-nondirectory buffer-file-name)))))
-;;     "#ifndef " str \n
-;;     "#define " str "\n\n"
-;;     _ "\n\n#endif"))
-;;   (indent-for-tab-command))
+(define-auto-insert
+  '("\\.\\([Hh]\\|hh\\|hxx\\|hpp\\)\\'" . "C / C++ header")
+  '((upcase (concat "_"
+                    (replace-regexp-in-string
+                     "[^a-zA-Z0-9]" "_"
+                     (format "%s" (file-name-nondirectory buffer-file-name)))))
+    "#ifndef " str \n
+    "#define " str "\n\n"
+    _ "\n\n#endif"))
+  (indent-for-tab-command))
 
 (defun open-line-above ()
   (interactive)
@@ -83,15 +83,15 @@
     (comment-dwim arg)))
 
 ;; 自动为 C/C++ 的头文件添加 #define 保护。
-(define-auto-insert
-  '("\\.\\([Hh]\\|hh\\|hxx\\|hpp\\)\\'" . "C / C++ header")
-  '((upcase (concat "_"
-                    (replace-regexp-in-string
-                     "[^a-zA-Z0-9]" "_"
-                     (format "%s" (file-name-nondirectory buffer-file-name)))))
-    "#ifndef " str \n
-    "#define " str "\n\n"
-    _ "\n\n#endif"))
+;; (define-auto-insert
+;;   '("\\.\\([Hh]\\|hh\\|hxx\\|hpp\\)\\'" . "C / C++ header")
+;;   '((upcase (concat "_"
+;;                     (replace-regexp-in-string
+;;                      "[^a-zA-Z0-9]" "_"
+;;                      (format "%s" (file-name-nondirectory buffer-file-name)))))
+;;     "#ifndef " str \n
+;;     "#define " str "\n\n"
+;;     _ "\n\n#endif"))
 
 ;; 复制和剪切当前行
 ;; copy region or whole line

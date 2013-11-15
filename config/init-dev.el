@@ -25,8 +25,6 @@
 ;; 自动给你加上括号
 (require 'autopair-settings)
 
-
-
 ;; 所有的自动补全的配置
 (require 'all-auto-complete-settings)
 (setq-default global-auto-complete-mode t)
