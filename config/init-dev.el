@@ -2,19 +2,6 @@
 (let ((default-directory "~/.emacs.d/lib/"))
   (normal-top-level-add-subdirs-to-load-path))
 
-(require 'eval-after-load)
-(require 'ahei-misc)
-
-;; 所有关于括号的配置
-(require 'all-paren-settings)
-
-;; 自动给你加上括号
-(require 'autopair-settings)
-
-;; 所有的自动补全的配置
-(require 'all-auto-complete-settings)
-(setq-default global-auto-complete-mode t)
-
 ;;先设置缩进
 ;;设置TAB宽度为4
 (setq default-tab-width 4) 
@@ -83,3 +70,15 @@
 
 ;; install ascope
 (require 'ascope)
+
+;; 按装helm-gtags
+(require 'helm-config)
+(require 'helm-gtags)
+
+(add-hook 'helm-gtags-mode-hook
+		  '(lambda ()
+			 (local-set-key (kbd "M-t") 'helm-gtags-find-tag)
+			 (local-set-key (kbd "M-r") 'helm-gtags-find-rtag)
+			 (local-set-key (kbd "M-s") 'helm-gtags-find-symbol)
+			 (local-set-key (kbd "C-t") 'helm-gtags-pop-stack)
+			 (local-set-key (kbd "C-c C-f") 'helm-gtags-find-files)))

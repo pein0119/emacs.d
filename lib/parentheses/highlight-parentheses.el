@@ -1,12 +1,12 @@
 ;;; highlight-parentheses.el --- highlight surrounding parentheses
 ;;
-;; Copyright (C) 2007, 2009 Nikolaj Schumacher
+;; Copyright (C) 2007, 2009, 2013 Nikolaj Schumacher
 ;;
 ;; Author: Nikolaj Schumacher <bugs * nschum de>
-;; Version: 1.0.1
+;; Version: 1.0.2
 ;; Keywords: faces, matching
 ;; URL: http://nschum.de/src/emacs/highlight-parentheses/
-;; Compatibility: GNU Emacs 22.x, GNU Emacs 23.x
+;; Compatibility: GNU Emacs 22.x, GNU Emacs 23.x, GNU Emacs 24.x
 ;;
 ;; This file is NOT part of GNU Emacs.
 ;;
@@ -28,9 +28,15 @@
 ;; Add the following to your .emacs file:
 ;; (require 'highlight-parentheses)
 ;;
-;; Enable `highlight-parentheses-mode'.
+;; Enable the mode using M-x highlight-parentheses-mode or by adding it to a
+;; hook.
 ;;
 ;;; Change Log:
+;;
+;;    Protect against double initialization (if used in `c-mode-hook').
+;;
+;; 2013-03-22 (1.0.2)
+;;    Fixed bug causing last color not to be displayed.
 ;;
 ;; 2009-03-19 (1.0.1)
 ;;    Added setter for color variables.
@@ -60,21 +66,21 @@
 
 (defcustom hl-paren-colors
   '("firebrick1" "IndianRed1" "IndianRed3" "IndianRed4")
-  "*List of colors for the highlighted parentheses.
+  "List of colors for the highlighted parentheses.
 The list starts with the the inside parentheses and moves outwards."
   :type '(repeat color)
   :set 'hl-paren-set
   :group 'highlight-parentheses)
 
 (defcustom hl-paren-background-colors nil
-  "*List of colors for the background highlighted parentheses.
+  "List of colors for the background highlighted parentheses.
 The list starts with the the inside parentheses and moves outwards."
   :type '(repeat color)
   :set 'hl-paren-set
   :group 'highlight-parentheses)
 
 (defface hl-paren-face nil
-  "*Face used for highlighting parentheses.
+  "Face used for highlighting parentheses.
 Color attributes might be overriden by `hl-paren-colors' and
 `hl-paren-background-colors'."
   :group 'highlight-parentheses)
@@ -100,7 +106,7 @@ This is used to prevent analyzing the same context over and over.")
       (save-excursion
         (condition-case err
             (while (and (setq pos1 (cadr (syntax-ppss pos1)))
-                        (cddr overlays))
+                        (cdr overlays))
               (move-overlay (pop overlays) pos1 (1+ pos1))
               (when (setq pos2 (scan-sexps pos1 1))
                 (move-overlay (pop overlays) (1- pos2) pos2)
@@ -114,14 +120,13 @@ This is used to prevent analyzing the same context over and over.")
 (define-minor-mode highlight-parentheses-mode
   "Minor mode to highlight the surrounding parentheses."
   nil " hl-p" nil
-  (if highlight-parentheses-mode
-      (progn
-        (hl-paren-create-overlays)
-        (add-hook 'post-command-hook 'hl-paren-highlight nil t))
-    (mapc 'delete-overlay hl-paren-overlays)
-    (kill-local-variable 'hl-paren-overlays)
-    (kill-local-variable 'hl-paren-point)
-    (remove-hook 'post-command-hook 'hl-paren-highlight t)))
+  (mapc 'delete-overlay hl-paren-overlays)
+  (kill-local-variable 'hl-paren-overlays)
+  (kill-local-variable 'hl-paren-last-point)
+  (remove-hook 'post-command-hook 'hl-paren-highlight t)
+  (when highlight-parentheses-mode
+    (hl-paren-create-overlays)
+    (add-hook 'post-command-hook 'hl-paren-highlight nil t)))
 
 ;;; overlays ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

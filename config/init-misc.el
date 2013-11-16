@@ -2,6 +2,19 @@
 (let ((default-directory "~/.emacs.d/lib/"))
   (normal-top-level-add-subdirs-to-load-path))
 
+(require 'eval-after-load)
+(require 'ahei-misc)
+
+;; 所有关于括号的配置
+(require 'all-paren-settings)
+
+;; 自动给你加上括号
+(require 'autopair-settings)
+
+;; 所有的自动补全的配置
+(require 'all-auto-complete-settings)
+(setq-default global-auto-complete-mode t)
+
 ;;设置redo
 (require 'redo+)
 
@@ -17,6 +30,7 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.MD\\'" . markdown-mode))
 
 ;;鼠标指针快速移动
 ;;安装ace-jump
@@ -33,3 +47,6 @@
 ;; 安装expand-region
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
+
+;; 安装dired+
+(require 'dired+-autoloads)
