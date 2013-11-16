@@ -117,3 +117,6 @@
 
 ;; redefine keybinding of 'query-replace-regexp
 (global-set-key (kbd "C-c %") 'query-replace-regexp)
+
+;; helm 快捷键
+(global-set-key (kbd "C-x C-f") 'helm-find-files)

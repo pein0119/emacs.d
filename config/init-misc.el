@@ -50,3 +50,13 @@
 
 ;; 安装dired+
 (require 'dired+-autoloads)
+
+;; 按抓helm
+(require 'helm-autoloads)
+(helm-mode 1)
+
+(add-hook 'eshell-mode-hook
+          #'(lambda ()
+              (define-key eshell-mode-map
+                [remap eshell-pcomplete]
+                'helm-esh-pcomplete)))
