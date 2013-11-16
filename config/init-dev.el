@@ -71,6 +71,4 @@
 ;; install ascope
 (require 'ascope)
 
-;; 按装helm-gtags
-(require 'helm-config)
-(require 'helm-gtags)
+;; 安装helm

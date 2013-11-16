@@ -19,7 +19,8 @@ emacs.d
 * init-face.el 对emacs的主题，模式栏进行配置
 * init-func.el 收集的一些零散的比较又用的函数
 * init-kbd.el  快捷键键绑定
-* init-elpa.el 对使用elpa安装的包的相关配置，目前未用
+* init-dev.el  关于编程环境的一些配置
+* init-misc.le 零散的一些配置
 
 ## lib ##
 主要存放配置需要的包
@@ -27,10 +28,8 @@ emacs.d
 * ace-jump-buffer 快速跳转到别的buffer
 * ace-jump-mode 快速跳转到当前buffer的任一位置
 * auto-complete 自动补全插件
-* color-theme 配置emacs主题的插件
 * flymake-cursor 配合flymake使用，在minibuffer显示出错信息
 * flymake-eays   配合flymake使用
-* multiple-cursors 类似于subtext的多指针功能，能同时编辑多处(暂时未配置)
 * parenthese 所有关于括号的配置(跳转到匹配的括号，匹配括号高亮，括号自动补全)
 * popwin ctrl-g可以关闭弹出的缓冲区
 * pyflakes python的flymake,能检测python的语法错误(有时候不太准确)

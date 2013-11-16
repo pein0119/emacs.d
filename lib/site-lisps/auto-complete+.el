@@ -67,11 +67,12 @@
                     c-mode c++-mode java-mode
                     perl-mode cperl-mode python-mode ruby-mode
                     javascript-mode js2-mode php-mode css-mode
-                    makefile-mode sh-mode fortran-mode f90-mode ada-mode
+                    makefile-mode markdown-mode
+					sh-mode fortran-mode f90-mode ada-mode
                     xml-mode sgml-mode html-mode fundamental-mode
                     org-mode svn-log-edit-mode text-mode
                     autoconf-mode makefile-automake-mode makefile-gmake-mode
-                    conf-javaprop-mode conf-unix-mode change-log-mode
+                    conf-javaprop-mode conf-unix-mode change-log-mode 
                     tcl-mode awk-mode latex-mode)
   "Major modes function `auto-complete-mode' can run on."
   :type '(list symbol)
