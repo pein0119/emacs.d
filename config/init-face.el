@@ -1,7 +1,6 @@
-(add-to-list 'load-path "~/.emacs.d/lib/site-lisps/")
-(add-to-list 'load-path "~/.emacs.d/lib/color-theme/")
-(add-to-list 'load-path "~/.emacs.d/lib/themes/")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/lib/themes/")
+;; 配置文件加载目录
+(let ((default-directory "~/.emacs.d/lib/"))
+  (normal-top-level-add-subdirs-to-load-path))
 
 ;;设置emacs最大化
 (require 'fullscreen)
