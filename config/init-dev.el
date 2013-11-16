@@ -5,9 +5,6 @@
 (require 'eval-after-load)
 (require 'ahei-misc)
 
-;;设置redo
-(require 'redo+)
-
 ;; 所有关于括号的配置
 (require 'all-paren-settings)
 
@@ -43,17 +40,6 @@
 
 ;; 动态检查语法错误
 (require 'flymake-settings)
-
-;;配置shell-pop
-(require 'shell-pop)
-(shell-pop-set-internal-mode "ansi-term")
-(shell-pop-set-internal-mode-shell "/usr/bin/ipython")
-(shell-pop-set-window-height 60) ;the number for the percentage of the selected window. if 100, shell-pop use the whole of selected window, not spliting.
-(shell-pop-set-window-position "bottom") ;shell-pop-up position. You can choose "top" or "bottom". 
-
-;;配置markdown-mode
-(autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
-(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
 ;;配置shell脚本的开发环境
 (require 'sh-mode-settings)
@@ -92,24 +78,8 @@
 ;;在minibuffer显示错误
 (require 'flymake-cursor-autoloads)
 
-;; `gdb'
+;; '配置gdb'
 (require 'gud-settings)
-
-;;鼠标指针快速移动
-;;安装ace-jump
-(require 'ace-jump-mode-autoloads)
-
-;;快速跳转到某一buffer
-(require 'ace-jump-buffer-autoloads)
-
-;;添加popwin,按C-g能让消息窗口消失
-(require 'popwin)
-(popwin-mode 1)
-
-
-;; 安装expand-region
-(require 'expand-region)
-(global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; install ascope
 (require 'ascope)
