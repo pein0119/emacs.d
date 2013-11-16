@@ -15,7 +15,9 @@
 ;;显示列号
 (column-number-mode t)
 
-;;高亮当前编辑行
+;;高亮当前编辑行和行号
+(require 'hlinum-autoloads)
+(hlinum-activate)
 (global-hl-line-mode t)
 
 ;;添加tabbar，类似于浏览器的标签页
