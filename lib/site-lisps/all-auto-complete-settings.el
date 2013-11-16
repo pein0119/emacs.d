@@ -1,6 +1,6 @@
 ;; -*- Emacs-Lisp -*-
 
-;; Time-stamp: <2010-11-21 14:06:46 Sunday by taoshanwen>
+;; Time-stamp: <2013-11-16 17:38:40 Saturday by pein>
 
 ;; This  file is free  software; you  can redistribute  it and/or
 ;; modify it under the terms of the GNU General Public License as
@@ -20,7 +20,6 @@
 
 ;; 自动补全
 (require 'auto-complete-settings)
-
 
 ;; 自动插入一些文件模板
 (require 'auto-insert-settings)
