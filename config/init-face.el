@@ -73,11 +73,10 @@
 ;; (global-set-key [(control tab)] 'shk-tabbar-next)
 ;; (global-set-key [(control shift tab)] 'shk-tabbar-prev)
 
-;; 添加sr-speedbar
-(require 'speedbar-extension)
-
 ;;光标改变
 (setq-default cursor-type 'bar) ; 设置光标为竖线 
 
 ;; 设置光标颜色为红色
 (set-cursor-color "red")		
+
+(require 'sr-speedbar-settings)

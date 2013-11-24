@@ -1,6 +1,7 @@
 ;;收集的一些比较好的函数
 
 ;;快捷键 C-x C-r重命名当前缓冲区
+;;;###autoload
 (defun rename-current-buffer-file ()
   "Renames current buffer and file it is visiting."
   (interactive)
@@ -19,6 +20,7 @@
                    name (file-name-nondirectory new-name)))))))
 
 ;;将一行上移 下移
+;;;###autoload
 (defun move-line-down ()
   (interactive)
   (let ((col (current-column)))
@@ -37,6 +39,7 @@
     (move-to-column col)))
 
 ;;平分窗格
+;;;###autoload
 (defun wenshan-split-window-vertical (&optional wenshan-number)
   (interactive "P")
   (setq wenshan-number (if wenshan-number
@@ -49,12 +52,14 @@
 
 ;;C-return 在当前行上新开一行
 ;;C-S-return 在当前行下新开一行
+;;;###autoload
 (defun open-line-below ()
   (interactive)
   (end-of-line)
   (newline)
 
 ;; 自动为 C/C++ 的头文件添加 #define 保护。
+;;;###autoload
 (define-auto-insert
   '("\\.\\([Hh]\\|hh\\|hxx\\|hpp\\)\\'" . "C / C++ header")
   '((upcase (concat "_"
@@ -66,6 +71,7 @@
     _ "\n\n#endif"))
   (indent-for-tab-command))
 
+;;;###autoload
 (defun open-line-above ()
   (interactive)
   (beginning-of-line)
@@ -74,6 +80,7 @@
   (indent-for-tab-command))
 
 ;;代码注释的功能
+;;;###autoload
 (defun qiang-comment-dwim-line (&optional arg)
   "Replacement for the comment-dwim command. If no region is selected and current line is not blank and we are not at the end of the line, then comment current line. Replaces default behaviour of comment-dwim, when it inserts comment at the end of the line."
   (interactive "*P")
@@ -82,19 +89,9 @@
       (comment-or-uncomment-region (line-beginning-position) (line-end-position))
     (comment-dwim arg)))
 
-;; 自动为 C/C++ 的头文件添加 #define 保护。
-;; (define-auto-insert
-;;   '("\\.\\([Hh]\\|hh\\|hxx\\|hpp\\)\\'" . "C / C++ header")
-;;   '((upcase (concat "_"
-;;                     (replace-regexp-in-string
-;;                      "[^a-zA-Z0-9]" "_"
-;;                      (format "%s" (file-name-nondirectory buffer-file-name)))))
-;;     "#ifndef " str \n
-;;     "#define " str "\n\n"
-;;     _ "\n\n#endif"))
-
 ;; 复制和剪切当前行
 ;; copy region or whole line
+;;;###autoload
 (global-set-key "\M-w"
 (lambda ()
   (interactive)
@@ -108,6 +105,7 @@
 
 
 ;; kill region or whole line
+;;;###autoload
 (global-set-key "\C-w"
 (lambda ()
   (interactive)
@@ -120,6 +118,7 @@
      (message "killed line")))))
 
 ;; 删除当前缓冲区对应的文件
+;;;###autoload
 (defun delete-current-buffer-file ()
   "Removes file connected to current buffer and kills buffer."
   (interactive)
@@ -134,3 +133,13 @@
         (message "File '%s' successfully removed" filename)))))
 
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
+
+;; 跳到匹配的括号
+;;;###autoload
+(defun goto-paren ()
+  "跳到匹配的括号"
+  (interactive)
+  (cond
+   ((looking-at "[ \t]*[[\"({]") (forward-sexp) (backward-char))
+    ((or (looking-at "[]\")}]") (looking-back "[]\")}][ \t]*")) (if (< (point) (point-max)) (forward-char)) (backward-sexp))
+   (t (message "找不到匹配的括号"))))

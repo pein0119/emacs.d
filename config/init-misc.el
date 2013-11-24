@@ -5,15 +5,16 @@
 (require 'eval-after-load)
 (require 'ahei-misc)
 
-;; 所有关于括号的配置
-(require 'all-paren-settings)
-
 ;; 自动给你加上括号
-(require 'autopair-settings)
+(require 'autopair)
+(autopair-global-mode)
 
 ;; 所有的自动补全的配置
 (require 'all-auto-complete-settings)
 (setq-default global-auto-complete-mode t)
+
+;;高亮显示匹配括号
+(show-paren-mode)
 
 ;;设置redo
 (require 'redo+)
@@ -46,10 +47,6 @@
 
 ;; 安装expand-region
 (require 'expand-region)
-(global-set-key (kbd "C-=") 'er/expand-region)
-
-;; 安装dired+
-(require 'dired+-autoloads)
 
 ;; ;; 按抓helm
 ;; (require 'helm-autoloads)

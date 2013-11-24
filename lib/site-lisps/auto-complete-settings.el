@@ -1,6 +1,6 @@
 ;; -*- Emacs-Lisp -*-
 
-;; Time-stamp: <2013-11-16 17:44:09 Saturday by pein>
+;; Time-stamp: <2012-01-01 13:12:37 Sunday by taoshanwen>
 
 (require 'auto-complete-config)
 (require 'auto-complete+)

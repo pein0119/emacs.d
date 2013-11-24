@@ -65,10 +65,5 @@
 ;;在minibuffer显示错误
 (require 'flymake-cursor-autoloads)
 
-;; '配置gdb'
-(require 'gud-settings)
-
-;; install ascope
+;; 安装 ascope，阅读代码
 (require 'ascope)
-
-;; 安装helm

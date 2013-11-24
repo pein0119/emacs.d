@@ -2,7 +2,7 @@
 
 ;; Author: ahei <ahei0802@gmail.com>
 ;; URL: http://code.google.com/p/dea/source/browse/trunk/my-lisps/flymake-settings.el
-;; Time-stamp: <2010-11-26 13:41:40 Friday by taoshanwen>
+;; Time-stamp: <2013-11-24 17:24:44 Sunday by pein>
 
 ;; This  file is free  software; you  can redistribute  it and/or
 ;; modify it under the terms of the GNU General Public License as
@@ -29,7 +29,7 @@
   "Settings for `flymake'."
   (setq flymake-gui-warnings-enabled nil)
   
-  (defvar flymake-makefile-filenames '("Makefile" "makefile" "GNUmakefile") "File names for make.")
+  (defvar flymake-makefile-filenames '("Makefile" "makefile" "GNUmakefile" ) "File names for make.")
   
   (defun flymake-get-make-gcc-cmdline (source base-dir)
     (let (found)
