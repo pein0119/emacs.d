@@ -9,6 +9,9 @@
 (require 'autopair)
 (autopair-global-mode)
 
+;; 为配对括号着色
+(require 'highlight-parentheses-settings)
+
 ;; 所有的自动补全的配置
 (require 'all-auto-complete-settings)
 (setq-default global-auto-complete-mode t)
