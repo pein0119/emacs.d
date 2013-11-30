@@ -109,3 +109,4 @@ emacs.d
 * 另，如果需要使用f4绑定的ipython,需要安装ipython
 * 如果需要使用ascope阅读源代码，需要安装cscope
 * 如果需要markdown模式的导出功能，需要安装markdown
+

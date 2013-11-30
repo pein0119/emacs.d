@@ -101,8 +101,10 @@
 (setq default-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;; no backup files
-(setq make-backup-files nil)				
+;; 自动备份文件
+;; 自动备份目录
+(setq make-backup-files t)
+(setq backup-directory-alist '(("."."~/.emacs.d/emacs-saves")))
 
 ; Don't Ignore case when completing file names
 (setq read-file-name-completion-ignore-case nil)

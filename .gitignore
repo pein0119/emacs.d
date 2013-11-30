@@ -8,3 +8,4 @@ ac-comphist.dat
 *.elc
 session.*
 bookmarks
+/emacs-saves/
