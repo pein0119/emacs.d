@@ -14,23 +14,9 @@
 (global-set-key (kbd "C-c k") 'windmove-up)
 (global-set-key (kbd "C-c j") 'windmove-down)
 
-;;对eshell的一些配置
-;;目的是开一个shell的小buffer，用于更方便地测试程序(也就是运行程序了)，我经常会用到。
-;;ctrl-[f6] 在当前窗口打开eshell,[f6]分割窗口打开eshell, ctrl-l清屏
-(defun open-eshell-other-buffer ()
-  "Open eshell in other buffer"
-  (interactive)
-  ;;(split-window-vertically)
-  (split-window-horizontally)
-  (eshell))
-(defun my-eshell-clear-buffer ()
-  "Eshell clear buffer."
-  (interactive)
-  (let ((eshell-buffer-maximum-lines 0))
-    (eshell-truncate-buffer)))
+;; eshell配置
 (global-set-key [(f6)] 'open-eshell-other-buffer)
 (global-set-key [C-f6]'eshell)
-;; (global-set-key [S-f6] 'my-eshell-clear-buffer)
 (defun my-eshell-hook()
   (local-set-key "\C-l" 'my-eshell-clear-buffer))
 (add-hook 'eshell-mode-hook 'my-eshell-hook)

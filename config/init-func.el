@@ -143,3 +143,16 @@
    ((looking-at "[ \t]*[[\"({]") (forward-sexp) (backward-char))
     ((or (looking-at "[]\")}]") (looking-back "[]\")}][ \t]*")) (if (< (point) (point-max)) (forward-char)) (backward-sexp))
    (t (message "找不到匹配的括号"))))
+
+;;对eshell的一些配置
+(defun open-eshell-other-buffer ()
+  "Open eshell in other buffer"
+  (interactive)
+  ;;(split-window-vertically)
+  (split-window-horizontally)
+  (eshell))
+(defun my-eshell-clear-buffer ()
+  "Eshell clear buffer."
+  (interactive)
+  (let ((eshell-buffer-maximum-lines 0))
+    (eshell-truncate-buffer)))
