@@ -3,7 +3,6 @@
 (setq user-mail-address "pein0119@gmail.com")
 
 ;;设置默认工作目录
-;;
 (setq default-directory "~/workspace/") 
 
 ;;提示
@@ -49,7 +48,6 @@
 
 (setq system-time-locale "C")
 
-
 ;; 支持emacs和外部程序的粘贴
 (setq x-select-enable-clipboard t)
 
@@ -65,6 +63,7 @@
 ;; 可以保存你上次光标所在的位置
 (require 'saveplace)
 (setq-default save-place t)
+(setq save-place-alist '(("."."~/.emacs.d/session")))
 
 ;; 光标靠近鼠标指针时，让鼠标指针自动让开，别挡住视线。
 (mouse-avoidance-mode 'animate)
@@ -102,7 +101,6 @@
 (prefer-coding-system 'utf-8)
 
 ;; 自动备份文件
-;; 自动备份目录
 (setq make-backup-files t)
 (setq backup-directory-alist '(("."."~/.emacs.d/emacs-saves")))
 
