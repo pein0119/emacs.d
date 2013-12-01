@@ -44,9 +44,7 @@
 (require 'ace-jump-buffer-autoloads)
 
 ;;添加popwin,按C-g能让消息窗口消失
-(require 'popwin)
-(popwin-mode 1)
-
+(require 'popwin-settings)
 
 ;; 安装expand-region
 (require 'expand-region)
