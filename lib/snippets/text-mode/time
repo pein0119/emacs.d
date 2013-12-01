@@ -1,4 +1,3 @@
-# name: (current time)
-# key: time
+#name : (current time)
 # --
 `(current-time-string)`

@@ -1,5 +1,4 @@
-# name: for ... in ... : ...
-# key: for
+#name : for ... in ... : ...
 # --
 for ${var} in ${collection}:
     $0

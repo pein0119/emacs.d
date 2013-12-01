@@ -1,6 +1,5 @@
-# contributor: Julio Carlos Menendez <godinblack@gmail.com>
-# name: _get_foo ... foo=property(...)
-# key: propg
+#contributor : Julio Carlos Menendez <godinblack@gmail.com>
+#name : _get_foo ... foo=property(...)
 # --
 def _get_${1:foo}(self):
     return self._$1
