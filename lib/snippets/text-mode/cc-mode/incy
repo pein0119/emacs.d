@@ -1,4 +1,0 @@
-# name: #include "..."
-# key: incy
-# --
-#include "$1"

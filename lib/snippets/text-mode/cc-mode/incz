@@ -1,4 +1,0 @@
-# name: #include <...>
-# key: incz
-# --
-#include <$1>

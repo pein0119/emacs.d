@@ -12,9 +12,11 @@
 ;; 为配对括号着色
 (require 'highlight-parentheses-settings)
 
-;; 所有的自动补全的配置
-;; (require 'all-auto-complete-settings)
-;; (setq-default global-auto-complete-mode t)
+;; 配置yasnippet
+(require 'yasnippet-settings)
+
+;;配置auto-complete
+(require 'auto-complete-settings)
 
 ;;高亮显示匹配括号
 (show-paren-mode)
@@ -48,16 +50,6 @@
 
 ;; 安装expand-region
 (require 'expand-region)
-
-;; ;; 安装helm
-;; (require 'helm-autoloads)
-;; (helm-mode 1)
-
-;; (add-hook 'eshell-mode-hook
-;;           #'(lambda ()
-;;               (define-key eshell-mode-map
-;;                 [remap eshell-pcomplete]
-;;                 'helm-esh-pcomplete)))
 
 ;; 安装quick-jump
 (require 'quick-jump)
