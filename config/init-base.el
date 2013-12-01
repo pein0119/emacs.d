@@ -63,7 +63,8 @@
 ;; 可以保存你上次光标所在的位置
 (require 'saveplace)
 (setq-default save-place t)
-(setq save-place-alist '(("."."~/.emacs.d/session")))
+(setq save-place-file '(("."."~/.emacs.d/session")))
+
 
 ;; 光标靠近鼠标指针时，让鼠标指针自动让开，别挡住视线。
 (mouse-avoidance-mode 'animate)
