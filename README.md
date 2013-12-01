@@ -33,7 +33,7 @@ emacs.d
 * parenthese 所有关于括号的配置(跳转到匹配的括号，匹配括号高亮，括号自动补全)
 * popwin ctrl-g可以关闭弹出的缓冲区
 * pyflakes python的flymake,能检测python的语法错误(有时候不太准确)
-* pylookup 强烈推荐的插件，可以方便的查找python手册
+n* pylookup 强烈推荐的插件，可以方便的查找python手册
 * site-lisps 存放一些收集到的比较零散的emacs配置文件
 * snippet yasnippet的代码片段
 * tabbar-master 为emacs加入类似浏览器标签的功能(暂时未使用)
@@ -56,6 +56,10 @@ emacs.d
 * C-c l **光标移到右部窗口**
 * C-c k **光标移到上部窗口**
 * C-c j **光标移到下部窗口**
+* C-c b **quick-jump-go-back**
+* C-c f **quick-jump-go-forward**
+* C-c , **quick-jump-push-marker**
+* C-c / **quick-jump-clear-all-marker**
 * f4 **弹出ipython**
 * f5 **gdb调试功能**
 * f6 **平分窗口，启动eshell**

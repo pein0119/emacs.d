@@ -13,8 +13,8 @@
 (require 'highlight-parentheses-settings)
 
 ;; 所有的自动补全的配置
-(require 'all-auto-complete-settings)
-(setq-default global-auto-complete-mode t)
+;; (require 'all-auto-complete-settings)
+;; (setq-default global-auto-complete-mode t)
 
 ;;高亮显示匹配括号
 (show-paren-mode)
@@ -51,7 +51,7 @@
 ;; 安装expand-region
 (require 'expand-region)
 
-;; ;; 按抓helm
+;; ;; 安装helm
 ;; (require 'helm-autoloads)
 ;; (helm-mode 1)
 
@@ -60,3 +60,6 @@
 ;;               (define-key eshell-mode-map
 ;;                 [remap eshell-pcomplete]
 ;;                 'helm-esh-pcomplete)))
+
+;; 安装quick-jump
+(require 'quick-jump)

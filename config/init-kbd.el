@@ -110,3 +110,9 @@
 
 ;; helm 快捷键
 ;; (global-set-key (kbd "C-x C-f") 'helm-find-files) 
+
+;; quick-jump的快捷键
+(global-set-key (kbd "C-c b") 'quick-jump-go-back)
+(global-set-key (kbd "C-c f") 'quick-jump-go-forward)
+(global-set-key (kbd "C-c ,") 'quick-jump-push-marker)
+(global-set-key (kbd "C-c /") 'quick-jump-clear-all-marker)
