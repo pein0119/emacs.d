@@ -14,7 +14,7 @@
 (setq ac-quick-help-height 60)
 (setq ac-disable-inline t)
 (setq ac-show-menu-immediately-on-auto-complete t)
-(setq ac-auto-start 2)
+;; (setq ac-auto-start 2)
 (setq ac-candidate-menu-min 0)
 
 (set-default 'ac-sources
