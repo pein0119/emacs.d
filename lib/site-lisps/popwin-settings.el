@@ -3,6 +3,8 @@
 
 (setq popwin:special-display-config
       '(("*Help*"  :height 30)
+		("*Locate*" :height 40)
+		("\\*Man\\*.*" :height 80)
         ("*Completions*" :noselect t)
         ("*Messages*" :noselect t :height 30)
         ("*Apropos*" :noselect t :height 30)

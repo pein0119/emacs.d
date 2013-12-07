@@ -6,3 +6,4 @@
 (load "init-misc.el")
 (load "init-dev.el")
 (load "init-kbd.el")
+(put 'erase-buffer 'disabled nil)
