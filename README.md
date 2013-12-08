@@ -113,4 +113,4 @@ n* pylookup 强烈推荐的插件，可以方便的查找python手册
 * 另，如果需要使用f4绑定的ipython,需要安装ipython
 * 如果需要使用ascope阅读源代码，需要安装cscope
 * 如果需要markdown模式的导出功能，需要安装markdown
-
+* 如果想使用pyflake检查python程序是否有错，需要安装pyflakes
