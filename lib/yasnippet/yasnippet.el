@@ -1534,7 +1534,7 @@ Here's the default value for all the parameters:
       (insert ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n")
       (insert "(defun yas/initialize-bundle ()\n"
               "  \"Initialize YASnippet and load snippets in the bundle.\"")
-      (flet ((yas/define-snippets
+      (cl-flet ((yas/define-snippets
               (mode snippets &optional parent-or-parents)
               (insert ";;; snippets for " (symbol-name mode) "\n")
               (let ((literal-snippets (list)))
@@ -3016,7 +3016,7 @@ Returns the newly created snippet."
 
 This is according to their relative positions in the buffer, and
 has to be called before the $-constructs are deleted."
-  (flet ((yas/fom-set-next-fom (fom nextfom)
+  (cl-flet ((yas/fom-set-next-fom (fom nextfom)
                                (cond ((yas/field-p fom)
                                       (setf (yas/field-next fom) nextfom))
                                      ((yas/mirror-p fom)

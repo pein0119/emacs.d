@@ -1,6 +1,6 @@
 emacs.d
 =======
-我的emacs配置文件(GNU emacs24.2)
+我的emacs配置文件(GNU emacs24.3)
 
 # 适用语言 #
 
