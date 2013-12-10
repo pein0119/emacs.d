@@ -57,6 +57,15 @@
   (interactive)
   (end-of-line)
   (newline)
+  (indent-for-tab-command))
+
+;;;###autoload
+(defun open-line-above ()
+  (interactive)
+  (beginning-of-line)
+  (newline)
+  (forward-line -1)
+  (indent-for-tab-command))
 
 ;; 自动为 C/C++ 的头文件添加 #define 保护。
 ;;;###autoload
@@ -69,15 +78,6 @@
     "#ifndef " str \n
     "#define " str "\n\n"
     _ "\n\n#endif"))
-  (indent-for-tab-command))
-
-;;;###autoload
-(defun open-line-above ()
-  (interactive)
-  (beginning-of-line)
-  (newline)
-  (forward-line -1)
-  (indent-for-tab-command))
 
 ;;代码注释的功能
 ;;;###autoload
