@@ -156,8 +156,3 @@
   (interactive)
   (let ((eshell-buffer-maximum-lines 0))
     (eshell-truncate-buffer)))
-
-(defun prelude-untabify-buffer ()
-  "Remove all tabs from the current buffer."
-  (interactive)
-  (untabify (point-min) (point-max)))
