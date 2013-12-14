@@ -92,9 +92,12 @@
 (global-set-key [(f8)] 'pylookup-lookup);;搜索文档
 
 ;;ace-jump-mode 的快捷键
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-(define-key global-map (kbd "C-x b") 'ace-jump-buffer)
-(define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+;; (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+;; (define-key global-map (kbd "C-x b") 'ace-jump-buffer)
+;; (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+(key-chord-define-global "jj" 'ace-jump-mode)
+(key-chord-define-global "jl" 'ace-jump-line-mode)
+(key-chord-define-global "jk" 'ace-jump-buffer)
 
 ;; expand-region 快捷键
 (global-set-key (kbd "C-=") 'er/expand-region)
@@ -116,3 +119,5 @@
 (global-set-key (kbd "C-c f") 'quick-jump-go-forward)
 (global-set-key (kbd "C-c ,") 'quick-jump-push-marker)
 (global-set-key (kbd "C-c /") 'quick-jump-clear-all-marker)
+
+(key-chord-mode +1)

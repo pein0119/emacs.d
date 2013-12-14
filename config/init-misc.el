@@ -54,27 +54,5 @@
 ;; 安装quick-jump
 (require 'quick-jump)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+;; 安装key-chord
+(require 'key-chord)
