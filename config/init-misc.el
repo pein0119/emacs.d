@@ -15,7 +15,7 @@
 ;; 配置yasnippet
 (require 'yasnippet-settings)
 
-;;配置auto-complete
+;; 配置auto-complete
 (require 'auto-complete-settings)
 
 ;;高亮显示匹配括号
@@ -53,3 +53,28 @@
 
 ;; 安装quick-jump
 (require 'quick-jump)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

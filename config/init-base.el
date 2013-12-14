@@ -20,16 +20,6 @@
 ;; buffer在外部改动时，自动刷新buffer
 (global-auto-revert-mode 1)
 
-;;无菜单栏
-(menu-bar-mode 0)
-
-;; Turn off mouse interface early in startup to avoid momentary display
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-
-;; No splash screen please ... jeez
-(setq inhibit-startup-message t)
-
 ;;配置emacs安装包的软件源
 (when (>= emacs-major-version 24)
   (require 'package)
@@ -63,6 +53,10 @@
 ;; 可以保存你上次光标所在的位置
 (require 'saveplace)
 (setq-default save-place t)
+
+;; 自动备份文件
+(setq make-backup-files t)
+(setq backup-directory-alist '(("."."~/.emacs.d/emacs-saves")))
 
 ;; 光标靠近鼠标指针时，让鼠标指针自动让开，别挡住视线。
 (mouse-avoidance-mode 'animate)
@@ -98,10 +92,6 @@
 ;; 设置默认编码
 (setq default-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
-
-;; 自动备份文件
-(setq make-backup-files t)
-(setq backup-directory-alist '(("."."~/.emacs.d/emacs-saves")))
 
 ; Don't Ignore case when completing file names
 (setq read-file-name-completion-ignore-case nil)

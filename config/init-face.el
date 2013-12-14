@@ -2,6 +2,15 @@
 (let ((default-directory "~/.emacs.d/lib/"))
   (normal-top-level-add-subdirs-to-load-path))
 
+;;无菜单栏
+(menu-bar-mode 0)
+;; 无工具栏
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+;; 无滚动条
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+;; 关闭启动画面
+(setq inhibit-startup-message t)
+
 ;;设置emacs最大化
 (require 'fullscreen)
 
