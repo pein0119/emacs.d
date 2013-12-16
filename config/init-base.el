@@ -10,19 +10,19 @@
 (icomplete-mode t)
 
 ;;打开文件时有提示
-(ido-mode t)
-(ido-everywhere t)
-(setq ido-enable-flex-matching t)
-(setq ido-use-filename-at-point nil)
-(setq ido-auto-merge-work-directories-length 0)
-(setq ido-use-virtual-buffers t)
+;; (ido-mode t)
+;; (ido-everywhere t)
+;; (setq ido-enable-flex-matching t)
+;; (setq ido-use-filename-at-point nil)
+;; (setq ido-auto-merge-work-directories-length 0)
+;; (setq ido-use-virtual-buffers t)
 
 ;; buffer在外部改动时，自动刷新buffer
 (global-auto-revert-mode 1)
 
 ;;配置emacs安装包的软件源
 (when (>= emacs-major-version 24)
-  (require 'package)
+	(require 'package)
   (package-initialize)
   (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 )

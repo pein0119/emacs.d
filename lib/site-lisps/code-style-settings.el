@@ -6,25 +6,28 @@
 	  c-basic-offset 4)
 
 ;; 设置python的缩进
-(setq python-indent-offset 4)
+(setq python-indent-offset 4);; 回车后自动缩进
 
-;; 回车后自动缩进
-;; (eal-define-keys
-;;  `(lisp-mode-map emacs-lisp-mode-map lisp-interaction-mode-map sh-mode-map
-;;                  java-mode-map
-;;                  ruby-mode-map c-mode-base-map tcl-mode-map org-mode-map
-;;                  python-mode-map perl-mode-map)
-;;  `(("RET" newline-and-indent)))
+;; 自动缩进
+(define-key global-map (kbd "RET") 'newline-and-indent)
 
-;; 设置自动缩进
-(setq auto-indent-on-visit-file t) 
-(setq auto-indent-assign-indent-level 4)
-(setq untabify t)
-(require 'auto-indent-mode)
-(auto-indent-global-mode)
-(autoload 'auto-indent-delete-char "auto-indent-mode" "" t)
-(define-key global-map [remap delete-char] 'auto-indent-delete-char)
-(autoload 'auto-indent-kill-line "auto-indent-mode" "" t)
-(define-key global-map [remap kill-line] 'auto-indent-kill-line)
+;; 粘贴时自动缩进
+(defun yank-and-indent ()
+    "Yank and then indent the newly formed region according to mode."
+    (interactive)
+    (yank)
+    (call-interactively 'indent-region))
+(global-set-key "\C-y" 'yank-and-indent)
+
+;; 删除换行符时自动连接两行
+(defun kill-and-join-forward (&optional arg)
+    (interactive "P")
+    (if (and (eolp) (not (bolp)))
+            (progn (forward-char 1)
+                   (just-one-space 0)
+                   (backward-char 1)
+                   (kill-line arg))
+        (kill-line arg)))
+(global-set-key "\C-k" 'kill-and-join-forward)
 
 (provide 'code-style-settings)

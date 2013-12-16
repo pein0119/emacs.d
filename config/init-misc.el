@@ -5,6 +5,9 @@
 (require 'eval-after-load)
 (require 'ahei-misc)
 
+;; 引入prelude关于ido的配置
+(require 'ido-settings)
+
 ;; 自动给你加上括号
 (require 'autopair)
 (autopair-global-mode)
