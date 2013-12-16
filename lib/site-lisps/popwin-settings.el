@@ -5,7 +5,7 @@
       '(("*Help*"  :height 30)
 		("*Locate*" :height 40)
 		("\\*Man\\*.*" :height 80)
-		("*Compile-Log*" :height 40)
+		("*Compile-Log*" :height 30)
 		("*Pylookup Completions*" :height 60)
         ("*Completions*" :noselect t)
         ("*Messages*" :noselect t :height 30)

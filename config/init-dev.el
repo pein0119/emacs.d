@@ -2,19 +2,8 @@
 (let ((default-directory "~/.emacs.d/lib/"))
   (normal-top-level-add-subdirs-to-load-path))
 
-;;先设置缩进
-;;设置TAB宽度为4
-(setq default-tab-width 4) 
-(setq c-default-style "linux"
-	  c-basic-offset 4)
-
-;; 回车后indent
-(eal-define-keys
- `(lisp-mode-map emacs-lisp-mode-map lisp-interaction-mode-map sh-mode-map
-                 java-mode-map
-                 ruby-mode-map c-mode-base-map tcl-mode-map org-mode-map
-                 python-mode-map perl-mode-map)
- `(("RET" newline-and-indent)))
+;; 设置编程风格
+(require 'code-style-settings)
 
 ;; 语法高亮
 (global-font-lock-mode t)
