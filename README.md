@@ -30,16 +30,16 @@ emacs.d
 * auto-complete 自动补全插件
 * flymake-cursor 配合flymake使用，在minibuffer显示出错信息
 * flymake-eays   配合flymake使用
-* parenthese 所有关于括号的配置(跳转到匹配的括号，匹配括号高亮，括号自动补全)
 * popwin ctrl-g可以关闭弹出的缓冲区
 * pyflakes python的flymake,能检测python的语法错误(有时候不太准确)
-n* pylookup 强烈推荐的插件，可以方便的查找python手册
+* pylookup 强烈推荐的插件，可以方便的查找python手册
 * site-lisps 存放一些收集到的比较零散的emacs配置文件
 * snippet yasnippet的代码片段
-* tabbar-master 为emacs加入类似浏览器标签的功能(暂时未使用)
+* tabbar 为emacs加入类似浏览器标签的功能(暂时未使用)
 * themes 存放我的emacs主题的地方
 * yasnippet emacs的代码片段功能
 * expand-region 快速选中区域
+* hlinum 高亮当前的行号
 
 # 快捷键 #
 *C指的是ctrl键，M指的是alt键，S指的是shift键*
@@ -84,9 +84,9 @@ n* pylookup 强烈推荐的插件，可以方便的查找python手册
 * C-return **return键指的是回车键，在当前行上方新开一行**
 * C-M-return **在当前行的下方新开一行**
 * M-; **代码注释的功能**
-* C-c SPC **SPC指的是空格键，调用ace-jump-mode跳到指定的字符**
-* C-c b **调用ace-jump-buffer,跳到指定的buffer**
-* C-x SPC **ace-jump-mode-pop-mark**
+* jj **调用ace-jump-mode跳到指定的字符**
+* jk **调用ace-jump-buffer,跳到指定的buffer**
+* jl **跳到指定的行**
 * C-= **扩展选中区域**
 * C-c w **选中当前单词**
 * C-c m **选中当前标识符**
@@ -114,3 +114,10 @@ n* pylookup 强烈推荐的插件，可以方便的查找python手册
 * 如果需要使用ascope阅读源代码，需要安装cscope
 * 如果需要markdown模式的导出功能，需要安装markdown
 * 如果想使用pyflake检查python程序是否有错，需要安装pyflakes
+
+# 加快emacs启动速度 #
+
+使用命令`C-u 0 M-x byte-recompile-directory`将所有的.el文件编译为.elc文件，可以
+加快emacs的启动速度。
+配置文件中安装了auto-compile,配置文件发生更改后，会自动编译发生变化的文件，这样就不需要
+编译整个配置文件了。
