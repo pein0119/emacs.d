@@ -56,3 +56,6 @@
 
 ;; 安装 ascope，阅读代码
 (require 'ascope)
+
+;; gdb多窗口调试
+(setq gdb-many-windows t)
