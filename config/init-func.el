@@ -30,6 +30,7 @@
     (forward-line)
     (move-to-column col)))
 
+;;;###autoload
 (defun move-line-up ()
   (interactive)
   (let ((col (current-column)))
@@ -145,14 +146,63 @@
    (t (message "找不到匹配的括号"))))
 
 ;;对eshell的一些配置
+;;;###autoload
 (defun open-eshell-other-buffer ()
   "Open eshell in other buffer"
   (interactive)
   ;;(split-window-vertically)
   (split-window-horizontally)
   (eshell))
+;;;###autoload
 (defun my-eshell-clear-buffer ()
   "Eshell clear buffer."
   (interactive)
   (let ((eshell-buffer-maximum-lines 0))
     (eshell-truncate-buffer)))
+
+;; 删除当前缓冲区所有的tab
+;;;###autoload
+(defun untabify-buffer ()
+  "Remove all tabs from the current buffer."
+  (interactive)
+  (untabify (point-min) (point-max)))
+
+;; 特权模式编辑文件
+;;;###autoload
+(defun sudo-edit (&optional arg)
+  "Edit currently visited file as root.
+
+With a prefix ARG prompt for a file to visit.
+Will also prompt for a file to visit if current
+buffer is not visiting a file."
+  (interactive "P")
+  (if (or arg (not buffer-file-name))
+      (find-file (concat "/sudo:root@localhost:"
+                         (ido-read-file-name "Find file(as root): ")))
+    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+
+;; 插入日期
+;;;###autoload
+(defun insert-date ()
+  "Insert a timestamp according to locale's date and time format."
+  (interactive)
+  (insert (format-time-string "%c" (current-time))))
+
+;; 当只有两个窗口时，可以交换两个窗口的缓冲区
+;;;###autoload
+(defun swap-windows ()
+  "If you have 2 windows, it swaps them."
+  (interactive)
+  (if (/= (count-windows) 2)
+      (message "You need exactly 2 windows to do this.")
+    (let* ((w1 (car (window-list)))
+           (w2 (cadr (window-list)))
+           (b1 (window-buffer w1))
+           (b2 (window-buffer w2))
+           (s1 (window-start w1))
+           (s2 (window-start w2)))
+      (set-window-buffer w1 b2)
+      (set-window-buffer w2 b1)
+      (set-window-start w1 s2)
+      (set-window-start w2 s1)))
+  (other-window 1))

@@ -1,5 +1,4 @@
 (add-to-list 'load-path "~/.emacs.d/config")
-(add-to-list 'load-path "~/.emacs.d/lib/site-lisps/")
 
 ;; 自动编译配置文件，加快emacs启动速度
 ;; (require 'auto-compile)
