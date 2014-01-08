@@ -15,7 +15,7 @@
 (setq inhibit-startup-message t)
 
 ;;设置emacs最大化
-(require 'fullscreen)
+;; (require 'fullscreen)
 
 ;;显示行号
 (global-linum-mode t)
