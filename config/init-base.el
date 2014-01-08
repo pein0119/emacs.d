@@ -5,17 +5,16 @@
 ;;设置默认工作目录
 (setq default-directory "~/workspace/") 
 
-;;提示
 ;;M-X 输入命令时有提示
 (icomplete-mode t)
 
 ;;打开文件时有提示
-;; (ido-mode t)
-;; (ido-everywhere t)
-;; (setq ido-enable-flex-matching t)
-;; (setq ido-use-filename-at-point nil)
-;; (setq ido-auto-merge-work-directories-length 0)
-;; (setq ido-use-virtual-buffers t)
+(ido-mode t)
+(ido-everywhere t)
+(setq ido-enable-flex-matching t)
+(setq ido-use-filename-at-point nil)
+(setq ido-auto-merge-work-directories-length 0)
+(setq ido-use-virtual-buffers t)
 
 ;; buffer在外部改动时，自动刷新buffer
 (global-auto-revert-mode 1)
@@ -77,10 +76,8 @@
 ;; 不要闪烁光标, 烦不烦啊
 ;; (blink-cursor-mode -1)
 
-;; Auto refresh buffers
+;; 自动刷新缓冲区
 (global-auto-revert-mode 1)
-
-;; Also auto refresh dired, but be quiet about it
 (setq global-auto-revert-non-file-buffers t)
 (setq auto-revert-verbose nil)
 
@@ -93,7 +90,5 @@
 (setq default-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-; Don't Ignore case when completing file names
+;; 不忽略大小写
 (setq read-file-name-completion-ignore-case nil)
-
-(defalias 'qrr 'query-replace-regexp)
