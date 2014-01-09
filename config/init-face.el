@@ -14,15 +14,10 @@
 ;; 关闭启动画面
 (setq inhibit-startup-message t)
 
-;;设置emacs最大化
-;; (require 'fullscreen)
-
 ;;显示行号
 (global-linum-mode t)
 
 ;;设置emacs主题
-;; (setq molokai-theme-kit t)
-;; (require 'molokai-theme)
 (require 'molokai-theme-kit)
 (load-theme 'monokai t)
 
@@ -31,13 +26,11 @@
 
 ;;高亮当前编辑行和行号
 ;; (require 'hlinum-autoloads)
-;; (hlinum-activate)
-;; (global-hl-line-mode t)
+(hlinum-activate)
+(global-hl-line-mode t)
 
 ;;光标改变
 (setq-default cursor-type 'bar) ; 设置光标为竖线 
 
 ;; 设置光标颜色为红色
 (set-cursor-color "red")		
-
-;; (require 'sr-speedbar-settings)

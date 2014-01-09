@@ -55,7 +55,7 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
-(setq auto-save-list "~/.emacs.d/savefile/auto-save-list")
+;; (setq auto-save-list-file "~/.emacs.d/savefile/auto-save-list")
 
 ;; 保存部分历史
 (require 'savehist)

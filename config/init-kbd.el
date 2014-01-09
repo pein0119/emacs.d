@@ -1,5 +1,5 @@
 ;;设置emacs全屏的快捷键为f11
-;;(global-set-key [f11] 'fullscreen-toggle) 
+(global-set-key [f11] 'fullscreen-toggle) 
 
 ;;设置sr-speedbar的快捷键
 ;;(global-set-key [(f7)] 'sr-speedbar-open)
