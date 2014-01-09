@@ -21,8 +21,10 @@
 (global-linum-mode t)
 
 ;;设置emacs主题
-(setq molokai-theme-kit t)
-(require 'molokai-theme)
+;; (setq molokai-theme-kit t)
+;; (require 'molokai-theme)
+(require 'molokai-theme-kit)
+(load-theme 'monokai t)
 
 ;;显示列号
 (column-number-mode t)

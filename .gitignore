@@ -2,7 +2,7 @@ tramp
 *~
 /eshell/
 /elpa/
-/lib/backup/
+/savefile/
 /auto-save-list/
 ac-comphist.dat
 *.elc

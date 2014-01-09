@@ -2,6 +2,9 @@
 (setq user-full-name "pein")
 (setq user-mail-address "pein0119@gmail.com")
 
+;; 将垃圾回收的阈值设置为50M
+(setq gc-cons-threshold 50000000)
+
 ;;设置默认工作目录
 (setq default-directory "~/workspace/") 
 
@@ -18,13 +21,6 @@
 
 ;; buffer在外部改动时，自动刷新buffer
 (global-auto-revert-mode 1)
-
-;;配置emacs安装包的软件源
-(when (>= emacs-major-version 24)
-	(require 'package)
-  (package-initialize)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-)
 
 ;; Emacs找不到合适的模式时，缺省使用text-mode
 (setq default-major-mode 'text-mode)
@@ -51,11 +47,50 @@
 
 ;; 可以保存你上次光标所在的位置
 (require 'saveplace)
+(setq save-place-file (expand-file-name "saveplace" savefile-dir))
 (setq-default save-place t)
 
-;; 自动备份文件
-(setq make-backup-files t)
-(setq backup-directory-alist '(("."."~/.emacs.d/emacs-saves")))
+;; 将“备份”和“自动保存”文件存储在/tmp文件夹中
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+(setq auto-save-list "~/.emacs.d/savefile/auto-save-list")
+
+;; 保存部分历史
+(require 'savehist)
+(setq savehist-additional-variables
+      ;; search entries
+      '(search ring regexp-search-ring)
+      ;; save every minute
+      savehist-autosave-interval 60
+      ;; keep the home clean
+      savehist-file (expand-file-name "savehist" savefile-dir))
+(savehist-mode +1)
+
+;; 保存最近打开的文件
+(require 'recentf)
+(setq recentf-save-file (expand-file-name "recentf" savefile-dir)
+      recentf-max-saved-items 500
+      recentf-max-menu-items 15)
+(recentf-mode +1)
+
+;; eshell文件保存路径
+(setq eshell-directory-name (expand-file-name "eshell" savefile-dir))
+
+;; 书签保存路径
+(require 'bookmark)
+(setq bookmark-default-file (expand-file-name "bookmarks" savefile-dir)
+      bookmark-save-flag 1)
+
+;; semanticdb保存路径
+(setq semanticdb-default-save-directory
+      (expand-file-name "semanticdb" savefile-dir))
+
+;; 递归的删除和复制目录
+(setq dired-recursive-deletes 'always)
+(setq dired-recursive-copies 'always)
+(require 'dired-x)
 
 ;; 光标靠近鼠标指针时，让鼠标指针自动让开，别挡住视线。
 (mouse-avoidance-mode 'animate)

@@ -34,7 +34,6 @@
 ;;
 ;; linum style
 ;;
-(require 'linum)
 (setq linum-format "%4d ")
 
 (toggle-indicate-empty-lines nil)
