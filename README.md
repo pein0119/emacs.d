@@ -1,6 +1,7 @@
 emacs.d
 =======
-我的emacs配置文件(GNU emacs24.3)
+我的emacs配置文件(GNU emacs24.3),吸收prelude emacs的配置，从elpa安装软件包。
+加快了emacs的启动速度
 
 # 适用语言 #
 
@@ -14,32 +15,13 @@ emacs.d
 功能：加载各个配置文件
 
 ## config ##
-主要存放一些配置文件
-* init-base.el 基础配置文件，只依赖emacs本身
-* init-face.el 对emacs的主题，模式栏进行配置
-* init-func.el 收集的一些零散的比较又用的函数
-* init-kbd.el  快捷键键绑定
-* init-dev.el  关于编程环境的一些配置
-* init-misc.le 零散的一些配置
+存放主要的配置文件
 
-## lib ##
-主要存放配置需要的包
+## modules ##
+零散的配置
 
-* ace-jump-buffer 快速跳转到别的buffer
-* ace-jump-mode 快速跳转到当前buffer的任一位置
-* auto-complete 自动补全插件
-* flymake-cursor 配合flymake使用，在minibuffer显示出错信息
-* flymake-eays   配合flymake使用
-* popwin ctrl-g可以关闭弹出的缓冲区
-* pyflakes python的flymake,能检测python的语法错误(有时候不太准确)
-* pylookup 强烈推荐的插件，可以方便的查找python手册
-* site-lisps 存放一些收集到的比较零散的emacs配置文件
-* snippet yasnippet的代码片段
-* tabbar 为emacs加入类似浏览器标签的功能(暂时未使用)
-* themes 存放我的emacs主题的地方
-* yasnippet emacs的代码片段功能
-* expand-region 快速选中区域
-* hlinum 高亮当前的行号
+## vendor ##
+存放不能经由elpa安装的软件包
 
 # 快捷键 #
 *C指的是ctrl键，M指的是alt键，S指的是shift键*
@@ -95,29 +77,3 @@ emacs.d
 * C-c i q **选中引号之内的内容**
 * C-c o q **选中引号之外的内容**
 * C-c % **使用正则表达式搜索并替换**
-
-# 安装方法 #
-
-## 下载本配置文件 ##
-
-支持三种访问协议：
-
-* HTTP协议: `https://github.com/pein0119/emacs.d.git` 。
-* Git协议: `git://github.com/pein0119/emacs.d.git` 。
-* SSH协议: `ssh://git@github.com/pein0119/emacs.d.git` 。
-
-## 具体安装 ##
-
-* 备份你原来的.emacs,.emacs.d文件
-* 将本配置文件解压到你的用户目录下，更名为.emacs.d即可
-* 另，如果需要使用f4绑定的ipython,需要安装ipython
-* 如果需要使用ascope阅读源代码，需要安装cscope
-* 如果需要markdown模式的导出功能，需要安装markdown
-* 如果想使用pyflake检查python程序是否有错，需要安装pyflakes
-
-# 加快emacs启动速度 #
-
-使用命令`C-u 0 M-x byte-recompile-directory`将所有的.el文件编译为.elc文件，可以
-加快emacs的启动速度。
-配置文件中安装了auto-compile,配置文件发生更改后，会自动编译发生变化的文件，这样就不需要
-编译整个配置文件了。
