@@ -86,7 +86,7 @@
 ;;(global-set-key [(f4)] 'shell-pop)
 
 ;;重做快捷键
-;;(global-set-key (kbd "C-.") 'redo)
+(global-set-key (kbd "C-.") 'redo)
 
 ;;定义pylook的快捷键
 ;;(global-set-key [(f8)] 'pylookup-lookup);;搜索文档
@@ -95,21 +95,21 @@
 ;; (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 ;; (define-key global-map (kbd "C-x b") 'ace-jump-buffer)
 ;; (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
-;;(key-chord-define-global "jj" 'ace-jump-mode)
-;;(key-chord-define-global "jl" 'ace-jump-line-mode)
-;;(key-chord-define-global "jk" 'ace-jump-buffer)
+(key-chord-define-global "jj" 'ace-jump-mode)
+(key-chord-define-global "jl" 'ace-jump-line-mode)
+(key-chord-define-global "jk" 'ace-jump-buffer)
 
 ;; expand-region 快捷键
-;;(global-set-key (kbd "C-=") 'er/expand-region)
-;; (global-set-key (kbd "C-c w") 'er/mark-word)
-;; (global-set-key (kbd "C-c m") 'er/mark-symbol)
-;; (global-set-key (kbd "C-c i p") 'er/mark-inside-pairs)
-;; (global-set-key (kbd "C-c o p") 'er/mark-outside-pairs)
-;; (global-set-key (kbd "C-c i q") 'er/mark-inside-quotes)
-;; (global-set-key (kbd "C-c o q") 'er/mark-outside-quotes)
+(global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "C-c w") 'er/mark-word)
+(global-set-key (kbd "C-c m") 'er/mark-symbol)
+(global-set-key (kbd "C-c i p") 'er/mark-inside-pairs)
+(global-set-key (kbd "C-c o p") 'er/mark-outside-pairs)
+(global-set-key (kbd "C-c i q") 'er/mark-inside-quotes)
+(global-set-key (kbd "C-c o q") 'er/mark-outside-quotes)
 
 ;; redefine keybinding of 'query-replace-regexp
-;;(global-set-key (kbd "C-c %") 'query-replace-regexp)
+(global-set-key (kbd "C-c %") 'query-replace-regexp)
 
 ;; helm 快捷键
 ;; (global-set-key (kbd "C-x C-f") 'helm-find-files) 
@@ -120,7 +120,6 @@
 ;; (global-set-key (kbd "C-c ,") 'quick-jump-push-marker)
 ;; (global-set-key (kbd "C-c /") 'quick-jump-clear-all-marker)
 
-;; (key-chord-mode +1)
 
 ;; 放大、缩小字体
 (global-set-key (kbd "C-+") 'text-scale-increase)

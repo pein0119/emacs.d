@@ -32,7 +32,7 @@
 (load "init-func.el")
 
 ;; 编辑优化
-;; (load "init-misc.el")
+(load "init-misc.el")
 
 ;; 配置开发环境
 ;; (load "init-dev.el")
