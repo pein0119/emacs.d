@@ -5,7 +5,6 @@
 (require 'auto-complete-config)
 (ac-config-default)
 (ac-flyspell-workaround)
-;; (add-to-list 'ac-dictionary-directories (concat  "~/.emacs.d/lib/auto-complete/dict"))
 (global-auto-complete-mode t)
 (setq ac-auto-show-menu t)
 (setq ac-dwim t)
@@ -14,7 +13,7 @@
 (setq ac-quick-help-height 60)
 (setq ac-disable-inline t)
 (setq ac-show-menu-immediately-on-auto-complete t)
-;; (setq ac-auto-start 2)
+(setq ac-auto-start 1)
 (setq ac-candidate-menu-min 0)
 
 (set-default 'ac-sources

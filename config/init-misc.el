@@ -7,8 +7,8 @@
 ;; 配置括号
 (require 'init-paren)
 
-;; ;; 配置yasnippet
-;; (require 'yasnippet-settings)
+;; 配置yasnippet
+(require 'init-yasnippet)
 
 ;; 配置auto-complete
 (require 'init-autocomplete)
