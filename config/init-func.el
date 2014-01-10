@@ -222,3 +222,14 @@ buffer is not visiting a file."
   (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
                          ;; if first parameter is '2', can toggle fullscreen status
                          '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
+
+;当前窗口和非当前窗口时透明度 
+(setq alpha-list '((100 100) (95 65) (85 55) (75 45) (65 35)))
+(defun loop-alpha () 
+  (interactive) 
+  (let ((h (car alpha-list))) 
+    ((lambda (a ab) 
+       (set-frame-parameter (selected-frame) 'alpha (list a ab)) 
+       (add-to-list 'default-frame-alist (cons 'alpha (list a ab)))) 
+     (car h) (car (cdr h))) 
+    (setq alpha-list (cdr (append alpha-list (list h)))))) 

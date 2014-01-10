@@ -21,11 +21,11 @@
 (require 'molokai-theme-kit)
 (load-theme 'monokai t)
 
+
 ;;显示列号
 (column-number-mode t)
 
 ;;高亮当前编辑行和行号
-;; (require 'hlinum-autoloads)
 (hlinum-activate)
 (global-hl-line-mode t)
 
