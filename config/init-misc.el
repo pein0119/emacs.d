@@ -1,5 +1,5 @@
 ;; 配置文件加载目录
-(add-to-list 'load-path "~/.emacs.d/lib/")
+(add-to-list 'load-path "~/.emacs.d/modules/")
 
 ;; 引入prelude关于ido的配置
 (require 'init-ido)
@@ -36,8 +36,8 @@
 ;; 安装expand-region
 (require 'expand-region)
 
-;; ;; 安装quick-jump
-;; (require-package 'quick-jump)
+;; 安装quick-jump
+(require 'quick-jump)
 
 ;; 安装key-chord
 (require 'key-chord)

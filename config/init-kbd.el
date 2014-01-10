@@ -9,7 +9,7 @@
 ;;(global-set-key [S-f7] 'sr-speedbar-close)
 
 ;; 'gdb'
-;;(global-set-key [(f5)] 'gdb)
+(global-set-key [(f5)] 'gdb)
 
 ;;窗口的切换,光标移到上下左右窗口
 (global-set-key (kbd "C-c h") 'windmove-left)
@@ -95,9 +95,6 @@
 ;;(global-set-key [(f8)] 'pylookup-lookup);;搜索文档
 
 ;;ace-jump-mode 的快捷键
-;; (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-;; (define-key global-map (kbd "C-x b") 'ace-jump-buffer)
-;; (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 (key-chord-define-global "jj" 'ace-jump-mode)
 (key-chord-define-global "jl" 'ace-jump-line-mode)
 (key-chord-define-global "jk" 'ace-jump-buffer)
@@ -118,10 +115,10 @@
 ;; (global-set-key (kbd "C-x C-f") 'helm-find-files) 
 
 ;; quick-jump的快捷键
-;; (global-set-key (kbd "C-c b") 'quick-jump-go-back)
-;; (global-set-key (kbd "C-c f") 'quick-jump-go-forward)
-;; (global-set-key (kbd "C-c ,") 'quick-jump-push-marker)
-;; (global-set-key (kbd "C-c /") 'quick-jump-clear-all-marker)
+(global-set-key (kbd "C-c b") 'quick-jump-go-back)
+(global-set-key (kbd "C-c f") 'quick-jump-go-forward)
+(global-set-key (kbd "C-c ,") 'quick-jump-push-marker)
+(global-set-key (kbd "C-c .") 'quick-jump-clear-all-marker)
 
 
 ;; 放大、缩小字体

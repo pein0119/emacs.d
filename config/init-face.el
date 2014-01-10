@@ -1,6 +1,7 @@
 ;; 配置文件加载目录
-(let ((default-directory "~/.emacs.d/lib/"))
+(let ((default-directory "~/.emacs.d/vendor/"))
   (normal-top-level-add-subdirs-to-load-path))
+(add-to-list 'load-path "~/.emacs.d/vendor/")
 
 ;;无菜单栏
 (menu-bar-mode 0)

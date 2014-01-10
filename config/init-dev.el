@@ -1,18 +1,11 @@
 ;; 配置文件加载目录
-(let ((default-directory "~/.emacs.d/lib/"))
-  (normal-top-level-add-subdirs-to-load-path))
+(add-to-list 'load-path "~/.emacs.d/modules")
 
 ;; 设置编程风格
 (require 'code-style-settings)
 
 ;; 语法高亮
 (global-font-lock-mode t)
-
-;;代码折叠
-(require 'hs-minor-mode-settings)
-
-;; doxygen
-(require 'doxymacs-settings)
 
 ;; 动态检查语法错误
 (require 'flymake-settings)

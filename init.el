@@ -1,5 +1,6 @@
 (add-to-list 'load-path "~/.emacs.d/config")
 
+;; 设置路径变量
 (defvar current-user
       (getenv
        (if (equal system-type 'windows-nt) "USERNAME" "USER")))
@@ -14,10 +15,6 @@
 (unless (file-exists-p savefile-dir)
   (make-directory savefile-dir))
 
-;; 自动编译配置文件，加快emacs启动速度
-;; (require 'auto-compile)
-;; (auto-compile-on-load-mode 1)
-;; (auto-compile-on-save-mode 1)
 
 ;; 经由网络安装软件包
 (load "init-packages.el")		
