@@ -20,6 +20,7 @@
     ace-jump-mode
     ace-jump-buffer
     auto-complete
+	ascope
     expand-region
     flx-ido 
     highlight-parentheses

@@ -8,9 +8,7 @@
 (global-font-lock-mode t)
 
 ;; 安装 ascope，阅读代码
-;;(require-package 'ascope)				
-;;(require 'ascope)
-;;(require 'ascope)						
+;; (require 'ascope)						
 
 ;; gdb多窗口调试
 (setq gdb-many-windows t)
