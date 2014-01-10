@@ -32,7 +32,7 @@
 (load "init-misc.el")
 
 ;; 配置开发环境
-;; (load "init-dev.el")
+(load "init-dev.el")
 
 ;; 配置快捷键
 (load "init-kbd.el")
