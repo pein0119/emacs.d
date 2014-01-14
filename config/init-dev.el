@@ -4,6 +4,10 @@
 ;; 设置编程风格
 (require 'init-codestyle)
 
+;; 安装fleck
+(require-package 'flycheck)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
 ;; 语法高亮
 (global-font-lock-mode t)
 
