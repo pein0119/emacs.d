@@ -28,6 +28,7 @@
     ido-ubiquitous 
     key-chord
     markdown-mode
+	monokai-theme
     popwin
     redo+
     smex

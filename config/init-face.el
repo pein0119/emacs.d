@@ -28,7 +28,7 @@
 
 ;;高亮当前编辑行和行号
 (hlinum-activate)
-(global-hl-line-mode t)
+;; (global-hl-line-mode t)
 
 ;;光标改变
 (setq-default cursor-type 'bar) ; 设置光标为竖线 
