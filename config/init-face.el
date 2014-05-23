@@ -35,3 +35,6 @@
 
 ;; 设置光标颜色为红色
 (set-cursor-color "red")		
+
+;;取消光标闪烁
+;; (setq blink-cursor -1)

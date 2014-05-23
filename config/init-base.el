@@ -109,7 +109,7 @@
 (add-hook 'write-file-hooks 'time-stamp)
 
 ;; 不要闪烁光标, 烦不烦啊
-;; (blink-cursor-mode -1)
+(blink-cursor-mode -1)
 
 ;; 自动刷新缓冲区
 (global-auto-revert-mode 1)
