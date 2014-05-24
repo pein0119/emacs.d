@@ -29,7 +29,7 @@
 (setq-default indicate-buffer-boundaries 'left)
 
 ;; 尽快显示按键序列
-(setq echo-keystrokes 0.01)
+(setq echo-keystrokes 0.001)
 
 (setq system-time-locale "C")
 
@@ -40,7 +40,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; 可以递归的使用minibuffer
-(setq enable-recursive-minibuffers t)
+ ;; (setq enable-recursive-minibuffers t)
 
 ;; 当你在shell、telnet、w3m等模式下时，必然碰到过要输入密码的情况,此时加密显出你的密码
 (add-hook 'comint-output-filter-functions 'comint-watch-for-password-prompt)
@@ -111,10 +111,6 @@
 ;; 不要闪烁光标, 烦不烦啊
 (blink-cursor-mode -1)
 
-;; 自动刷新缓冲区
-(global-auto-revert-mode 1)
-(setq global-auto-revert-non-file-buffers t)
-(setq auto-revert-verbose nil)
 
 ;;标题栏显示文件路径
 (setq frame-title-format
@@ -122,8 +118,5 @@
 (dired-directory dired-directory "%b"))))
 
 ;; 设置默认编码
-(setq default-buffer-file-coding-system 'utf-8)
+(setq buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
-
-;; 不忽略大小写
-(setq read-file-name-completion-ignore-case nil)
