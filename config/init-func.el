@@ -233,3 +233,4 @@ buffer is not visiting a file."
        (add-to-list 'default-frame-alist (cons 'alpha (list a ab)))) 
      (car h) (car (cdr h))) 
     (setq alpha-list (cdr (append alpha-list (list h)))))) 
+

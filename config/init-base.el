@@ -14,6 +14,7 @@
 ;;打开文件时有提示
 (ido-mode t)
 (ido-everywhere t)
+(setq ido-separator "\n")
 (setq ido-enable-flex-matching t)
 (setq ido-use-filename-at-point nil)
 (setq ido-auto-merge-work-directories-length 0)

@@ -83,7 +83,7 @@
 (global-set-key (kbd "<C-M-return>") 'open-line-above)
 
 ;;代码注释的功能
-(global-set-key "\M-;" 'qiang-comment-dwim-line) 
+(global-set-key (kbd "M-;") 'qiang-comment-dwim-line) 
 
 ;;shell-pop
 ;;(global-set-key [(f4)] 'shell-pop)
