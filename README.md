@@ -6,6 +6,7 @@ emacs.d
 # 适用语言 #
 
 * c/c++
+* php
 * python
 
 # 文件组织 #
