@@ -24,6 +24,7 @@
   (local-set-key "\C-l" 'my-eshell-clear-buffer))
 (add-hook 'eshell-mode-hook 'my-eshell-hook)
 
+
 ;; 在行首 C-k 时，同时删除该行。
 (setq-default kill-whole-line t)
 

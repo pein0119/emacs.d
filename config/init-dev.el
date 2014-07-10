@@ -1,6 +1,16 @@
 ;; 配置文件加载目录
 (add-to-list 'load-path "~/.emacs.d/modules")
 
+;; 修改iedit下的快捷键
+;; (defun my-iedit-hook ()
+;;   (local-set-key (kbd "C-h") 'delete-backward-char)
+;;   (local-set-key (kbd "M-h") 'help-command)
+;;   )
+;; (add-hook 'iedit-mode-hook 'my-iedit-hook)
+
+;; python 的IDE环境
+(elpy-enable)
+
 ;; 设置编程风格
 (require 'init-codestyle)
 

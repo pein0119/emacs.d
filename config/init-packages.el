@@ -22,6 +22,7 @@
     auto-complete
 	ascope
     expand-region
+	elpy
     flx-ido 
     highlight-parentheses
     hlinum
