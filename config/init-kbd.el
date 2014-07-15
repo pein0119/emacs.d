@@ -125,3 +125,6 @@
 ;; 放大、缩小字体
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
+
+;; align-regexp
+(global-set-key (kbd "C-c a") 'align-regexp)

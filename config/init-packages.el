@@ -136,8 +136,3 @@ PACKAGE is installed only if not already present.  The file is opened in MODE."
  auto-install-alist)
 
 (provide 'init-packages)
-;; Local Variables:
-;; byte-compile-warnings: (not cl-functions)
-;; End:
-
-;;; prelude-packages.el ends here
