@@ -128,3 +128,6 @@
 
 ;; align-regexp
 (global-set-key (kbd "C-c a") 'align-regexp)
+
+;; 复制当前文件名
+(global-set-key (kbd "C-c n") 'copy-file-name-to-clipboard)
