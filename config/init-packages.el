@@ -24,12 +24,14 @@
     expand-region
 	elpy
     flx-ido 
+	flycheck-pos-tip
     highlight-parentheses
     hlinum
     ido-ubiquitous 
     key-chord
     markdown-mode
 	monokai-theme
+	php-mode
     popwin
     redo+
     smex
