@@ -19,9 +19,9 @@
 ;; 经由网络安装软件包
 (load "init-packages.el")		
 
-(eval-after-load 'flycheck
-  '(custom-set-variables
-	'(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
+;; (eval-after-load 'flycheck
+;;   '(custom-set-variables
+;; 	'(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
 
 ;; 基础配置
 (load "init-base.el")

@@ -131,3 +131,6 @@
 
 ;; 复制当前文件名
 (global-set-key (kbd "C-c n") 'copy-file-name-to-clipboard)
+
+;; neotree 的快捷键
+(global-set-key [f8] 'neotree-toggle)

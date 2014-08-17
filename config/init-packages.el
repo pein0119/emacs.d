@@ -31,6 +31,7 @@
     key-chord
     markdown-mode
 	monokai-theme
+	neotree
 	php-mode
     popwin
     redo+

@@ -42,3 +42,6 @@
 ;; 安装key-chord
 (require 'key-chord)
 (key-chord-mode +1)
+
+;; 安装neotree,显示文件目录
+(require 'neotree)
