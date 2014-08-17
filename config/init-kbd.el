@@ -134,3 +134,9 @@
 
 ;; neotree 的快捷键
 (global-set-key [f8] 'neotree-toggle)
+
+;; helm 的快捷键
+(global-set-key (kbd "S-h") 'helm-mini)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "M-x") 'helm-M-x)
+

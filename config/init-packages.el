@@ -25,6 +25,7 @@
 	elpy
     flx-ido 
 	flycheck-pos-tip
+	helm
     highlight-parentheses
     hlinum
     ido-ubiquitous 

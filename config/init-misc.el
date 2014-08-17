@@ -45,3 +45,7 @@
 
 ;; 安装neotree,显示文件目录
 (require 'neotree)
+
+;; 安装helm
+(require 'helm-config)
+(helm-mode 1)
