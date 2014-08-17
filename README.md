@@ -50,7 +50,7 @@ emacs.d
 * C-l **在eshell中的作用是清屏**
 * f7 **开启speedbar**
 * S-f7 **隐藏speedbar**
-* f8 **调用pylookup,搜索文档，文档对应的是python2.7.5**
+* f8 **开启/隐藏 neotree**
 * f11 **全屏**
 * C-k **光标在行首时，删除当前行**
 * C-x k **关闭当前缓冲区**
