@@ -36,6 +36,7 @@
 	php-mode
     popwin
     redo+
+	smarty-mode
     smex
     yasnippet
     )
