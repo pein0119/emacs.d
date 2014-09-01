@@ -28,6 +28,7 @@
 	helm
     highlight-parentheses
     hlinum
+	nginx-mode
     ido-ubiquitous 
     key-chord
     markdown-mode

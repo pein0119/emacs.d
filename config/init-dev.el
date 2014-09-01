@@ -26,3 +26,6 @@
 
 ;; gdb多窗口调试
 (setq gdb-many-windows t)
+
+;; 编辑nginx配置文件
+(require 'nginx-mode)
