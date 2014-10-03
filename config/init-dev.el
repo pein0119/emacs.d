@@ -29,3 +29,6 @@
 
 ;; 编辑nginx配置文件
 (require 'nginx-mode)
+
+;; js
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))

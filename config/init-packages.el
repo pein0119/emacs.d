@@ -28,12 +28,14 @@
 	helm
     highlight-parentheses
     hlinum
-	nginx-mode
-    ido-ubiquitous 
+    ido-ubiquitous
+	js2-mode
+	js2-refactor
     key-chord
     markdown-mode
 	monokai-theme
 	neotree
+	nginx-mode
 	php-mode
     popwin
     redo+
