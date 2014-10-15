@@ -15,8 +15,9 @@
 (require 'init-codestyle)
 
 ;; 安装fleck
-(require-package 'flycheck)
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; php flycheck
+;; (require-package 'flycheck)
+;; (flycheck-mode t)
 
 ;; 语法高亮
 (global-font-lock-mode t)

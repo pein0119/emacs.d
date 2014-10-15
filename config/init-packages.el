@@ -133,6 +133,7 @@ PACKAGE is installed only if not already present.  The file is opened in MODE."
   (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
   (add-to-list 'auto-mode-alist '("\\.MD\\'" . markdown-mode)))
 
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
   ;; 建立自动加载映射
 (mapc
  (lambda (entry)

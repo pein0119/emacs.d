@@ -31,6 +31,7 @@
         ("*nrepl-result*" :height 30 :stick t)
         ("*nrepl-macroexpansion*" :height 30 :stick t)
         ("*Kill Ring*" :height 30)
+		("*grep*" :height 30)
         ("*Compile-Log*" :height 30 :stick t)
         ("*git-gutter:diff*" :height 30 :stick t)))
 
