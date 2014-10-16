@@ -1,23 +1,34 @@
-;;收集的一些比较好的函数
+;;; 收集的一些函数
 
-;;快捷键 C-x C-r重命名当前缓冲区
+;;重命名当前文件
 ;;;###autoload
-(defun rename-current-buffer-file ()
-  "Renames current buffer and file it is visiting."
-  (interactive)
-  (let ((name (buffer-name))
-        (filename (buffer-file-name)))
-    (if (not (and filename (file-exists-p filename)))
-        (error "Buffer '%s' is not visiting a file!" name)
-      (let ((new-name (read-file-name "New name: " filename)))
-        (if (get-buffer new-name)
-            (error "A buffer named '%s' already exists!" new-name)
-          (rename-file filename new-name 1)
-          (rename-buffer new-name)
-          (set-visited-file-name new-name)
-          (set-buffer-modified-p nil)
-          (message "File '%s' successfully renamed to '%s'"
-                   name (file-name-nondirectory new-name)))))))
+(defun rename-file-and-buffer (new-name)
+  "Renames both current buffer and file it's visiting to NEW-NAME."
+  (interactive
+   (progn
+     (if (not (buffer-file-name))
+         (error "Buffer '%s' is not visiting a file!" (buffer-name)))
+     (list (read-file-name (format "Rename %s to: " (file-name-nondirectory
+                                                     (buffer-file-name)))))))
+  (if (equal new-name "")
+      (error "Aborted rename"))
+  (setq new-name (if (file-directory-p new-name)
+                     (expand-file-name (file-name-nondirectory
+                                        (buffer-file-name))
+                                       new-name)
+                   (expand-file-name new-name)))
+  ;; If the file isn't saved yet, skip the file rename, but still update the
+  ;; buffer name and visited file.
+  (if (file-exists-p (buffer-file-name))
+      (rename-file (buffer-file-name) new-name 1))
+  (let ((was-modified (buffer-modified-p)))
+    ;; This also renames the buffer, and works with uniquify
+    (set-visited-file-name new-name)
+    (if was-modified
+        (save-buffer)
+      ;; Clear buffer-modified flag caused by set-visited-file-name
+      (set-buffer-modified-p nil))
+  (message "Renamed to %s" new-name)))
 
 ;;将一行上移 下移
 ;;;###autoload
@@ -39,20 +50,7 @@
       (transpose-lines -1))
     (move-to-column col)))
 
-;;平分窗格
-;;;###autoload
-(defun wenshan-split-window-vertical (&optional wenshan-number)
-  (interactive "P")
-  (setq wenshan-number (if wenshan-number
-                           (prefix-numeric-value wenshan-number)
-                         3))
-  (while (> wenshan-number 1)
-    (split-window-right)
-    (setq wenshan-number (- wenshan-number 1)))
-  (balance-windows))
-
-;;C-return 在当前行上新开一行
-;;C-S-return 在当前行下新开一行
+;; 在当前行上新开一行
 ;;;###autoload
 (defun open-line-below ()
   (interactive)
@@ -60,6 +58,7 @@
   (newline)
   (indent-for-tab-command))
 
+;; 在当前行下新开一行
 ;;;###autoload
 (defun open-line-above ()
   (interactive)
@@ -68,21 +67,9 @@
   (forward-line -1)
   (indent-for-tab-command))
 
-;; 自动为 C/C++ 的头文件添加 #define 保护。
-;;;###autoload
-(define-auto-insert
-  '("\\.\\([Hh]\\|hh\\|hxx\\|hpp\\)\\'" . "C / C++ header")
-  '((upcase (concat "_"
-                    (replace-regexp-in-string
-                     "[^a-zA-Z0-9]" "_"
-                     (format "%s" (file-name-nondirectory buffer-file-name)))))
-    "#ifndef " str \n
-    "#define " str "\n\n"
-    _ "\n\n#endif"))
-
 ;;代码注释的功能
 ;;;###autoload
-(defun qiang-comment-dwim-line (&optional arg)
+(defun comment-dwim-line (&optional arg)
   "Replacement for the comment-dwim command. If no region is selected and current line is not blank and we are not at the end of the line, then comment current line. Replaces default behaviour of comment-dwim, when it inserts comment at the end of the line."
   (interactive "*P")
   (comment-normalize-vars)
@@ -90,8 +77,7 @@
       (comment-or-uncomment-region (line-beginning-position) (line-end-position))
     (comment-dwim arg)))
 
-;; 复制和剪切当前行
-;; copy region or whole line
+;; 复制当前行
 ;;;###autoload
 (global-set-key "\M-w"
 (lambda ()
@@ -104,8 +90,7 @@
      (line-end-position))
      (message "copied line")))))
 
-
-;; kill region or whole line
+;; 剪切当前行
 ;;;###autoload
 (global-set-key "\C-w"
 (lambda ()
@@ -159,8 +144,12 @@
   (interactive)
   (let ((eshell-buffer-maximum-lines 0))
     (eshell-truncate-buffer)))
+;;;###autoload
+(defun my-eshell-hook()
+  (local-set-key "\C-l" 'my-eshell-clear-buffer))
+(add-hook 'eshell-mode-hook 'my-eshell-hook)
 
-;; 删除当前缓冲区所有的tab
+;; 将当前缓冲区所有的tab替换为空格
 ;;;###autoload
 (defun untabify-buffer ()
   "Remove all tabs from the current buffer."
@@ -171,7 +160,6 @@
 ;;;###autoload
 (defun sudo-edit (&optional arg)
   "Edit currently visited file as root.
-
 With a prefix ARG prompt for a file to visit.
 Will also prompt for a file to visit if current
 buffer is not visiting a file."
@@ -224,6 +212,7 @@ buffer is not visiting a file."
                          '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
 
 ;当前窗口和非当前窗口时透明度 
+;;;###autoload
 (setq alpha-list '((100 100) (95 65) (85 55) (75 45) (65 35)))
 (defun loop-alpha () 
   (interactive) 
@@ -235,6 +224,7 @@ buffer is not visiting a file."
     (setq alpha-list (cdr (append alpha-list (list h)))))) 
 
 ;; 复制当前文件名
+;;;###autoload
 (defun copy-file-name-to-clipboard ()
   "Copy the current buffer file name to the clipboard."
   (interactive)

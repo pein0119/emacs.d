@@ -1,35 +1,22 @@
+;;; 配置开发环境
+
 ;; 配置文件加载目录
-(add-to-list 'load-path "~/.emacs.d/modules")
+(add-to-list 'load-path "~/.emacs.d/vendor")
 
-;; 修改iedit下的快捷键
-;; (defun my-iedit-hook ()
-;;   (local-set-key (kbd "C-h") 'delete-backward-char)
-;;   (local-set-key (kbd "M-h") 'help-command)
-;;   )
-;; (add-hook 'iedit-mode-hook 'my-iedit-hook)
+;; 配置代码风格
+(load "codestyle-settings.el")
 
-;; python 的IDE环境
-(elpy-enable)
+;; 加载markdown的配置文件
+(load "markdown-settings.el")
 
-;; 设置编程风格
-(require 'init-codestyle)
+;; 配置Python开发环境
+(load "python-settings.el")
 
-;; 安装fleck
-;; php flycheck
-;; (require-package 'flycheck)
-;; (flycheck-mode t)
+;; 加载nginx的配置文件
+(load "nginx-settings.el")
+
+;; 启用flychek
+(global-flycheck-mode t)
 
 ;; 语法高亮
 (global-font-lock-mode t)
-
-;; 安装 ascope，阅读代码
-;; (require 'ascope)						
-
-;; gdb多窗口调试
-(setq gdb-many-windows t)
-
-;; 编辑nginx配置文件
-(require 'nginx-mode)
-
-;; js
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))

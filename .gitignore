@@ -1,14 +1,9 @@
-tramp
 *#
 *~
 /eshell/
 /elpa/
-/savefile/
 /auto-save-list/
 ac-comphist.dat
 *.elc
 session.*
 bookmarks
-/emacs-saves/
-/session/
-/semanticdb/

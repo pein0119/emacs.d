@@ -2,8 +2,7 @@
 
 ;;设置TAB宽度为4
 (setq default-tab-width 4) 
-(setq c-default-style "linux"
-	  c-basic-offset 4)
+(setq c-basic-offset 4)
 
 ;; 设置python的缩进
 (setq python-indent-offset 4);; 回车后自动缩进
@@ -29,5 +28,3 @@
                    (kill-line arg))
         (kill-line arg)))
 (global-set-key "\C-k" 'kill-and-join-forward)
-
-(provide 'init-codestyle)
