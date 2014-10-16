@@ -27,7 +27,9 @@
     ace-jump-mode                       ; 在buffer间快速跳转
     neotree 				            ; 文件浏览
     ;;; 编辑功能
+	autopair							; 自动添加括号
     expand-region                       ; 根据语法单元增加选中区域
+	highlight-parentheses				; 为配对的括号配色
 	key-chord							; 快捷键
     multiple-cursors                    ; 多游标编辑
     ;;; 搜索替换
