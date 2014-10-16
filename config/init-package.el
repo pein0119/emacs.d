@@ -20,6 +20,7 @@
     browse-kill-ring                    ; Kill ring 浏览
     smex                                ; 增强 M-x
     hlinum				                ; 高亮行号
+	popwin								; 关闭弹出缓冲区
     ;;; 文件浏览工具
     ido-ubiquitous                      ; 在每个地方都使用ido
     flx-ido                             ; 增强的ido模糊搜索
