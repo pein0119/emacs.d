@@ -13,6 +13,8 @@
 ;; 定义需要安装的软件包列表
 (defconst required-packages
   '(
+	;;; 基本依赖库
+	dash
     ;;; 颜色主题
     monokai-theme						; 非常漂亮的水果色主题
     ;;; 增强UI功能
@@ -29,6 +31,8 @@
     neotree 				            ; 文件浏览
     ;;; 编辑功能
 	autopair							; 自动添加括号
+	ace-jump-mode						; 快速跳动某一字符
+    ace-jump-buffer						; 快速跳到某一缓冲区
     expand-region                       ; 根据语法单元增加选中区域
 	highlight-parentheses				; 为配对的括号配色
 	key-chord							; 快捷键

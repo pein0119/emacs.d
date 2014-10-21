@@ -1,5 +1,6 @@
 ;;; 基本配置
 
+
 ;; 设置个人信息
 (setq user-full-name "pein")
 (setq user-mail-address "pein0119@gmail.com")
@@ -49,3 +50,28 @@
 ;; 设置默认编码
 (setq buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+;; 可以保存你上次光标所在的位置
+(require 'saveplace)
+(setq save-place-file (expand-file-name "saveplace" savefile-dir))
+(setq-default save-place t)
+
+;; 将“备份”和“自动保存”文件存储在backup文件夹中
+(setq backup-directory-alist
+      `((".*" . , backup-dir)))
+(setq auto-save-file-name-transforms
+      `((".*" , backup-dir t)))
+
+;; 保存部分历史
+(require 'savehist)
+(setq savehist-additional-variables
+      ;; search entries
+      '(search ring regexp-search-ring)
+      ;; save every minute
+      savehist-autosave-interval 60
+      ;; keep the home clean
+      savehist-file (expand-file-name "savehist" savefile-dir))
+(savehist-mode +1)
+
+;; eshell文件保存路径
+(setq eshell-directory-name (expand-file-name "eshell" savefile-dir))

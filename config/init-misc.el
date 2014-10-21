@@ -21,6 +21,9 @@
 ;; 配置 popwin
 (load "popwin-settings.el")
 
+;; 启用keychord
+(key-chord-mode t)
+
 ;; 启用which-func-mode
 (which-function-mode)
 (setq-default header-line-format

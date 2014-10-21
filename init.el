@@ -1,6 +1,24 @@
 ;; 添加文件加载路径
 (add-to-list 'load-path "~/.emacs.d/config")
 
+(defvar root-dir (file-name-directory load-file-name)
+  "emacs配置的根目录")
+
+(defvar savefile-dir (expand-file-name "savefile" root-dir)
+  "这个文件夹存储emacs自动生成的文件")
+
+(defvar backup-dir (expand-file-name "backup" savefile-dir)
+  "存储emacs生成的备份文件")
+
+;; 创建savefile文件夹
+(unless (file-exists-p savefile-dir)
+  (make-directory savefile-dir))
+
+;; 创建备份文件夹
+(unless (file-exists-p backup-dir)
+  (make-directory backup-dir))
+
+
 ;;不使用emacs的默认配置
 (setq inhibit-default-init t)
 

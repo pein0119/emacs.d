@@ -19,7 +19,7 @@
 (global-set-key (kbd "C-c i d") 'insert-date)
 
 ;; 特权模式编辑文件
-(global-set-key (kbd "C-c s w") 'sudo-edit)
+(global-set-key (kbd "C-c s e") 'sudo-edit)
 
 ;; 交换两个窗口
 (global-set-key (kbd "C-c s w") 'swap-windows)
@@ -93,6 +93,9 @@
 (global-set-key (kbd "<f6>") 'open-eshell-other-buffer)
 (global-set-key (kbd "C-<f6>") 'eshell)
 
+;; expand-region的配置
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 ;; neotree 的快捷键
 (global-set-key [f8] 'neotree-toggle)
 
@@ -101,3 +104,10 @@
 
 ;; 下面是窗口的半透明效果的开启 
 (global-set-key (kbd "<f12>") 'loop-alpha) 
+
+;;ace-jump-mode 的快捷键
+(key-chord-define-global "jj" 'ace-jump-mode)
+(key-chord-define-global "jl" 'ace-jump-line-mode)
+
+;;ace-jump-buffer 的快捷键
+(key-chord-define-global "jk" 'ace-jump-buffer)

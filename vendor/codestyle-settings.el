@@ -1,6 +1,6 @@
 ;; 编程的语言的格式设置
 
-;;设置TAB宽度为4
+;; 设置TAB宽度为4
 (setq default-tab-width 4) 
 (setq c-basic-offset 4)
 
