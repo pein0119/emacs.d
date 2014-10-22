@@ -1,7 +1,6 @@
 *#
 *~
-/eshell/
-/savefile/
+/savefile
 /elpa/
 /auto-save-list/
 ac-comphist.dat
