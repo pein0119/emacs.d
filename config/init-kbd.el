@@ -96,6 +96,9 @@
 ;; expand-region的配置
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+;; 跳转到匹配的括号
+(global-set-key (kbd "C-]") 'goto-paren)
+
 ;; neotree 的快捷键
 (global-set-key [f8] 'neotree-toggle)
 
