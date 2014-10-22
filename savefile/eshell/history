@@ -57,3 +57,50 @@ ls -a
 ls
 php -l index.php 
 php index.php 
+ls
+cd
+ls
+cd .emacs.d/
+ls
+php add .
+ls
+ls
+cd savefile/
+ls
+cd backup/
+ls
+ls
+cd ..
+ls
+ls
+ls
+cd ..
+ls
+ls
+git add .
+ls
+ls
+git commit -m "add configuration for expand-region"
+git push -u origin
+hexo g
+cd ..
+ls
+cd ..
+ls
+hexo g
+hexo g
+hexo d
+hexo s
+hexo v
+hexo version
+ls
+hexo g
+hexo s
+hexo g
+hexo d
+hexo g
+hexo d
+hexo c
+hexo clean
+hexo g
+hexo d
