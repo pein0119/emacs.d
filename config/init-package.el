@@ -13,12 +13,12 @@
 ;; 定义需要安装的软件包列表
 (defconst required-packages
   '(
-	;;; 基本依赖库
+	;;;
 	dash
     ;;; 颜色主题
-    monokai-theme						; 非常漂亮的水果色主题
+	monokai-theme						; 非常漂亮的水果色主题
     ;;; 增强UI功能
-    anzu                                ; isearch的状态栏显示
+	anzu                                ; isearch的状态栏显示
     browse-kill-ring                    ; Kill ring 浏览
     smex                                ; 增强 M-x
     hlinum				                ; 高亮行号
