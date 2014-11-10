@@ -29,6 +29,8 @@
     ido-vertical-mode                   ; 垂直显示ido选项
     ace-jump-mode                       ; 在buffer间快速跳转
     neotree 				            ; 文件浏览
+	;; 代码阅读
+	xcscope								; cscope的emacs前端
     ;;; 编辑功能
 	autopair							; 自动添加括号
 	ace-jump-mode						; 快速跳动某一字符
