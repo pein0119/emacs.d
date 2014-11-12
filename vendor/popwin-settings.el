@@ -34,4 +34,5 @@
 		("*grep*" :height 30)
         ("*Compile-Log*" :height 30 :stick t)
 		("*cscope*" :height 30 :stick t)
+		("*Man select*" :height 30 :stick t)
         ("*git-gutter:diff*" :height 30 :stick t)))
