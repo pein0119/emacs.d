@@ -125,3 +125,8 @@
 (key-chord-define-global "sn" 'cscope-history-forward-line-current-result)
 (key-chord-define-global "sp" 'cscope-history-backward-line-current-result)
 (key-chord-define-global "sa" 'cscope-set-initial-directory)
+
+;; redo undo快捷键
+(defalias 'redo 'undo-tree-redo)
+(global-set-key (kbd "C-/") 'undo) 
+(global-set-key (kbd "C-.") 'redo) 

@@ -39,6 +39,7 @@
 	highlight-parentheses				; 为配对的括号配色
 	key-chord							; 快捷键
     multiple-cursors                    ; 多游标编辑
+	undo-tree							; 撤销、重做
     ;;; 搜索替换
     ag                                  ; 代码搜索
     ;;; 自动补全和代码片段

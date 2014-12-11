@@ -36,3 +36,7 @@
 ;; 配置xcscope，浏览代码
 (require 'xcscope)
 (cscope-setup)
+
+;; 配置redo undo
+(require 'undo-tree)
+(global-undo-tree-mode 1)
