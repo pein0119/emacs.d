@@ -6,6 +6,7 @@
 (setq popwin:special-display-config
       '(("*Help*"  :height 30)
 		("*Locate*" :height 40)
+		;; ("*ack*" :height 40)
 		("\\*Man\\*.*" :height 80)
 		("*Compile-Log*" :height 30)
 		("*Pylookup Completions*" :height 60)

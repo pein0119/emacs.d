@@ -116,15 +116,15 @@
 (key-chord-define-global "jk" 'ace-jump-buffer)
 
 ;; xcscope 的快捷键
-(key-chord-define-global "ss" 'cscope-find-this-symbol)
-(key-chord-define-global "s=" 'cscope-find-assignments-to-this-symbol)
-(key-chord-define-global "sd" 'cscope-find-global-definition)
-(key-chord-define-global "sc" 'cscope-find-functions-calling-this-function)
-(key-chord-define-global "st" 'cscope-find-this-text-string)
-(key-chord-define-global "si" 'cscope-find-files-including-file)
-(key-chord-define-global "sn" 'cscope-history-forward-line-current-result)
-(key-chord-define-global "sp" 'cscope-history-backward-line-current-result)
-(key-chord-define-global "sa" 'cscope-set-initial-directory)
+;; (key-chord-define-global "ss" 'cscope-find-this-symbol)
+;; (key-chord-define-global "s=" 'cscope-find-assignments-to-this-symbol)
+;; (key-chord-define-global "sd" 'cscope-find-global-definition)
+;; (key-chord-define-global "sc" 'cscope-find-functions-calling-this-function)
+;; (key-chord-define-global "st" 'cscope-find-this-text-string)
+;; (key-chord-define-global "si" 'cscope-find-files-including-file)
+;; (key-chord-define-global "sn" 'cscope-history-forward-line-current-result)
+;; (key-chord-define-global "sp" 'cscope-history-backward-line-current-result)
+;; (key-chord-define-global "sa" 'cscope-set-initial-directory)
 
 ;; redo undo快捷键
 (defalias 'redo 'undo-tree-redo)

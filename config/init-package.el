@@ -41,7 +41,7 @@
     multiple-cursors                    ; 多游标编辑
 	undo-tree							; 撤销、重做
     ;;; 搜索替换
-    ag                                  ; 代码搜索
+	ack									; 代码查找
     ;;; 自动补全和代码片段
     auto-complete			            ; 自动补全
     yasnippet				            ; 插入代码片段
