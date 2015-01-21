@@ -53,6 +53,8 @@
     flycheck							; 代码错误检测
     ;; php
     php-mode				            ; php模式
+	;; lua
+	lua-mode							; lua模式
     ;; js
     js2-mode          
     ;; Python

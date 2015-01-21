@@ -1,0 +1,187 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/MLS/.emacs.d/" . "config/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/" . "database/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/template/work/template/" . "index/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/template/work/" . "template/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/template/" . "work/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/base/" . "helper/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/" . "merchant/")
+ ("/Users/MLS/" . ".emacs.d/")
+ ("/Users/" . "MLS/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/" . "design/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/apimodules/" . "bad/")
+ ("/Users/MLS/workspace/repos/phplib/" . "db/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/" . "trunk/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/config/" . "dev/")
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/" . "config/")
+ ("/Users/MLS/workspace/repos/meilizhizao/" . "docs/")
+ ("/Users/MLS/workspace/repos/" . "phplib/")
+ ("/Users/MLS/workspace/" . "repos/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/MLS/.emacs.d/config/"
+ "/Users/MLS/workspace/lua/"
+ "/Users/MLS/workspace/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/config/dev/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/"
+ "/Users/MLS/workspace/repos/meilizhizao/docs/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/design/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/help/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/menu/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/context/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/base/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/user/"
+ "/Users/MLS/workspace/repos/phplib/db/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/database/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/common/"
+ "/Users/MLS/workspace/repos/phplib/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/remote/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/user/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/biz/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/template/work/template/index/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/index/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/public/"
+ "/Users/MLS/Applications/"
+ "/Users/MLS/workspace/repos/phplib/tools/"
+ "/Users/MLS/workspace/repos/meilizhizao/codes/trunk/apimodules/bad/"
+ "/Users/MLS/workspace/repos/phplib/audio/"
+ "/Users/MLS/workspace/php/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init-package.el"
+ "hello.lua"
+ "mysql.txt"
+ "MySQL.class.php"
+ "constDoc2getName.php"
+ "deploy.md"
+ "term.md"
+ "AddRequirement.class.php"
+ "Intro.class.php"
+ "MenuItem.class.php"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/MLS/.emacs.d/config/" (21692 50596 0 0) "init-ui.el" "init-package.el" "init-misc.el" "init-kbd.el" "init-func.el" "init-dev.el" "init-base.el" "../" "./")
+
+ ("/Users/MLS/.emacs.d/" (21694 4814 0 0) "vendor/" "url/" "smex-items" "savefile/" "README.md" "init.el" "ido.last" "elpa/" "config/" "auto-save-list/" "ac-comphist.dat" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/MLS/" (21695 53576 0 0) "workspace/" "work/" "Public/" "Pictures/" "News/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-2015-008的MacBook Pro-5.0.5" ".viminfo" ".Trash/" ".subversion/" ".ssh/" ".phpsh/" ".pearrc" ".oh-my-zsh/" ".mysql_history" ".lesshst" ".emacs.d/" ".DS_Store" ".CFUserTextEncoding" ".bash_history" "../" "./")
+
+ ("/Users/MLS/workspace/lua/" (21695 53650 0 0) "hello.lua" "../" "./")
+
+ ("/Users/MLS/workspace/" (21695 53600 0 0) "repos/" "php/" "mysql.txt" "lua/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/textile/" (21692 52690 0 0) "TextileManager.class.php" "ModelDef.class.php" "Model.class.php" "ConstDefine.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/" (21695 23510 0 0) "ZooClient.class.php" "Xml.class.php" "XLogger.class.php" "wms/" "VException.class.php" "Utilities.class.php" "Util.class.php" "tenpay/" "tencentyunapi/" "Task.class.php" "SnakeClient.class.php" "smarty/" "remote/" "RedisCache.class.php" "qandt/" "pipe/" "PinyinTranslate.class.php" "PermissionDispatcher.class.php" "PageController.class.php" "Page.class.php" "package/" "orm/" "MlzzClient.class.php" "Math.class.php" "Logger.class.php" "IRemoteRequest.class.php" "interfaces/" "image/" "HttpRequest.class.php" "httpclient/" "Filter.class.php" "DootaClient.class.php" "Dispatcher.class.php" "dbqueue/" "dbproxy/" "database/" "daemon/" "CurlLink.class.php" "Curl.class.php" "Controller.class.php" "channelapi/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/database/" (21695 12664 0 0) "QueryMaker.class.php" "ModelDefBase.class.php" "Helper.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/config/dev/" (21695 10480 0 0) "sphinx.config.php" "Remote.class.php" "Redis.class.php" "platformservice.config.php" "MySQL.class.php" "Memcache.class.php" "CpsRedis.class.php" "config.inc.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/merchant/" (21692 52690 0 0) "MerchantUserManager.class.php" "MerchantModelDef.class.php" "MerchantModel.class.php" "MerchantManager.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/design/" (21692 52686 0 0) "View.class.php" "ShowDoc.class.php" "ShowBom.class.php" "SendSampleToMerchant.class.php" "RejectBack.class.php" "MerchantConfirmSample.class.php" "Lists.class.php" "GenItemNo.class.php" "ForceClose.class.php" "EditZhiyangzhizuodan.class.php" "EditSampleBomRequirement.class.php" "EditRequirement.class.php" "EditHejiadan.class.php" "EditGongyidan.class.php" "EditDesign.class.php" "EditBandan.class.php" "DesignerConfirmSample.class.php" "ConfirmSampleBomRequirement.class.php" "ConfirmEnterBanFang.class.php" "BanFangZhuGuanConfirmOutBanFang.class.php" "BandanCaigouEdit.class.php" "BandanCaigou.class.php" "AssignZhiYangShi.class.php" "ApiGetGongyidan.class.php" "ApiGetDesignInfo.class.php" "ApiAutocomplete.class.php" "AddRequirement.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/help/" (21692 52686 0 0) "Intro.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/menu/" (21692 52686 0 0) "Index.class.php" "../" "./")
+
+ ("/Users/MLS/Documents/" (21695 12544 0 0) ".localized" "../" "./")
+
+ ("/Users/MLS/workspace/repos/phplib/db/" (21695 12151 0 0) "SQLMonitor.class.php" "PDO.class.php" "DBModelTrans.class.php" "DBModel.class.php" "DatabaseTrans.class.php" "Database.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/user/" (21695 12114 0 0) "UserRoleManager.class.php" "UserModelDef.class.php" "UserModel.class.php" "UserManager.class.php" "UserAuthMeilishuo.class.php" "UserAuthBase.class.php" "UserAuthBackdoor.class.php" "SessionUser.class.php" "RoleManager.class.php" "ConstDefine.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/common/" (21692 52690 0 0) "Region.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/phplib/" (21695 5525 0 0) "weiboapi/" "txweiboapi/" "tools/" "thrift/" "taobaoapi/" "sphinxseg/" "sphinx/" "redis/" "qzoneapi/" "platformservice/" "phpqrcode/" "nusoap/" "mongo/" "image/" "Framework/" "db/" "Config.class.php" "cache/" "Autoloader.class.php" "audio/" ".svn/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/remote/" (21692 52688 0 0) "Remote.class.php" "IRemoteRequest.class.php" "CurlLink.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/ufile/" (21692 52690 0 0) "UploaderInterface.class.php" "UploaderFactory.class.php" "UploaderBase.class.php" "UFileType.class.php" "UfileModelDef.class.php" "UfileModel.class.php" "UfileManager.class.php" "LocalFileUploader.class.php" "ImageServiceUploader.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/biz/" (21694 17471 0 0) "ZhiyangzhizuodanModelDef.class.php" "ZhiyangzhizuodanModel.class.php" "ZhiyangzhizuodanManager.class.php" "RequirementPropDict.class.php" "RequirementModelDef.class.php" "RequirementModel.class.php" "RequirementManager.class.php" "OperationType.class.php" "OperationToRoleManager.class.php" "ItemNoGenerator.class.php" "HejiadanModelDef.class.php" "HejiadanModel.class.php" "HejiadanManager.class.php" "GongyidanModelDef.class.php" "GongyidanModel.class.php" "GongyidanManager.class.php" "DocType.class.php" "DesignStatusType.class.php" "DesignStatusManager.class.php" "DesignStatusAutomator.class.php" "DesignOwnerManager.class.php" "DesignModelDef.class.php" "DesignModel.class.php" "DesignManager.class.php" "DesignDecorateHelper.class.php" "DesignCategoryType.class.php" "DesignBizLogic.class.php" "DchanglogModelDef.class.php" "DchanglogModel.class.php" "DchanglogManager.class.php" "BomType.class.php" "BomStatusType.class.php" "BomModelDef.class.php" "BomModel.class.php" "BomManager.class.php" "BomDetailModelDef.class.php" "BomDetailModel.class.php" "BomDetailManager.class.php" "BandanModelDef.class.php" "BandanModel.class.php" "BandanManager.class.php" "BandanCailiaoModelDef.class.php" "BandanCailiaoModel.class.php" "BandanCaigouModelDef.class.php" "BandanCaigouModel.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/template/work/template/index/" (21692 52690 0 0) "index_wan.tpl" "index_src.tpl" "index.tpl" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/template/work/template/" (21692 52691 0 0) "warehouse/" "user/" "textile/" "system/" "supplier/" "sandbox/" "sample/" "purchase/" "order/" "merchant/" "menu/" "material/" "index/" "help/" "example/" "error/" "err/" "design/" "delete/" "default.tpl" "dashboard/" "creative/" "color/" "accessory/" "_widget/" "_layout/" "_common/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/template/work/" (21692 52691 0 0) "template_c/" "template/" "config/" "cache/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/template/" (21692 52691 0 0) "www/" "work/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/tools/" (21692 52686 0 0) "op/" "dev/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/user/" (21692 52687 0 0) "Logout.class.php" "Login.class.php" "Lists.class.php" "Edit.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/tags/" (21692 52784 0 0) "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/bad/" (21692 52686 0 0) "Badrequest.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/base/helper/" (21692 52686 0 0) "DesignHelper.class.php" "../" "./")
+
+ ("/Users/MLS/Applications/" (21694 7948 0 0) "myssh.sh" ".localized" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/base/" (21694 11499 0 0) "MlzzPageController.class.php" "helper/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/public/" (21694 11681 0 0) "upload/" "static/" "index_www.php" "index_api.php" "index.php" ".htaccess" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/context/" (21694 10937 0 0) "RequestContext.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/menu/" (21692 52690 0 0) "MenuManager.class.php" "MenuItemList.class.php" "MenuItem.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/package/" (21692 52690 0 0) "warehouse/" "util/" "user/" "ufile/" "textile/" "supplier/" "sms/" "sample/" "purchase/" "producmerchantdelivery/" "order/" "merchant/" "menu/" "material/" "delete/" "creative/" "context/" "common/" "biz/" "api/" "accessory/" "../" "./")
+
+ ("/Users/MLS/.subversion/" (21692 49160 0 0) "servers" "README.txt" "config" "auth/" "../" "./")
+
+ ("/Users/" (21693 7449 0 0) "Shared/" "MLS/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/index/" (21692 52686 0 0) "Index.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/modules/" (21692 52687 0 0) "www/" "warehouse/" "user/" "tools/" "textile/" "system/" "supplier/" "sandbox/" "sample/" "requirement/" "purchase/" "order/" "merchant/" "menu/" "index/" "help/" "example/" "err/" "design/" "delete/" "dashboard/" "creative/" "color/" "base/" "bad/" "accessory/" "../" "./")
+
+ ("//" (21692 32076 0 0) "用户信息/" "Volumes/" "var/" "usr/" "Users/" "tmp/" "System/" "sbin/" "private/" "Network/" "net/" "Library/" "installer.failurerequests" "home/" "etc/" "dev/" "cores/" "bin/" "Applications/" ".vol/" ".Trashes/" ".Spotlight-V100/" ".PKInstallSandboxManager/" ".fseventsd/" ".file" ".DocumentRevisions-V100/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/phplib/platformservice/" (21692 54172 0 0) "TMlsSocket.class.php" "TableColumnInfoConfig.php" "ServiceRandomGenerator.class.php" "Scribe.php" "RpcConfig.php" "RpcBase.php" "MlsStorageServiceClient.class.php" "MlsStorageService.class.php" "example/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/phplib/tools/" (21692 54172 0 0) "Utilities.class.php" "ParseWords.class.php" "LogUtilities.class.php" "Logger.class.php" "LogCollect.class.php" "Liblog.class.php" "CommonCounter.class.php" "Benchmark.class.php" "Autolink.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/php/" (21692 59828 0 0) "hello.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/apimodules/bad/" (21692 52686 0 0) "Badrequest.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/apimodules/" (21692 52686 0 0) "order/" "design/" "base/" "bad/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/phplib/audio/" (21692 54172 0 0) "getid3/" "AudioUtil.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/" (21692 54167 0 0) "virus/" "snake/" "phplib/" "meilizhizao/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/" (21692 52784 0 0) "trunk/" "tags/" "branches/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/config/" (21692 52686 0 0) "production/" "dev/" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/" (21692 52691 0 0) "wwwmodules/" "tests/" "template/" "sonar-project.properties" "script/" "README" "public/" "package/" "modules/" "frame/" "constDoc2getName.php" "config/" "apimodules/" "AAA" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/tencentyunapi/" (21692 52688 0 0) "sdk/" "MqWallet.class.php" "config.php" "AbstractApi.class.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/tencentyunapi/sdk/" (21692 52688 0 0) "Test_UploadFile.php" "Test_OpenApiV3.php" "README.txt" "OpenApiV3.php" "lib/" "Cpay_for_CEE_V2.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/codes/trunk/frame/tencentyunapi/sdk/lib/" (21692 52688 0 0) "SnsStat.php" "SnsSigCheck.php" "SnsNetwork.php" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/docs/" (21692 52686 0 0) "warehouse.md" "term.md" "status_management_callmap.png" "status_management.md" "deploy.md" "db/" "conf/" "coding-spec.md" "../" "./")
+
+ ("/Users/MLS/workspace/repos/meilizhizao/" (21692 52686 0 0) "tools/" "docs/" "codes/" ".svn/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

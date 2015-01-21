@@ -1,0 +1,22 @@
+
+;; ----- smex-history -----
+(
+ list-packages
+ gnus-slave-no-server
+ ack
+ eww
+ browse-url
+ cd
+ 5x5
+)
+
+;; ----- smex-data -----
+(
+ (ack . 14)
+ (php-browse-manual . 1)
+ (php-search-documentation . 1)
+ (browse-url . 1)
+ (eww . 1)
+ (gnus-slave-no-server . 1)
+ (list-packages . 1)
+)
