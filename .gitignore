@@ -2,6 +2,7 @@
 *~
 /savefile
 /elpa/
+/url/
 /auto-save-list/
 ac-comphist.dat
 *.elc
