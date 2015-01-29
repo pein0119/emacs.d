@@ -17,12 +17,16 @@ emacs.d
 
 ## config ##
 存放主要的配置文件
-
-## modules ##
-零散的配置
+* init-base.el **基础配置**
+* init-package.el **经由elpa安装软件包，可以在required-packages函数中添加需要的包**
+* init-ui.el **界面配置**
+* init-misc.el **零散的配置**
+* init-func.el **收集的一些函数**
+* init-dev.el **与语言开发相关的配置**
+* init-kbd.el **配置快捷键**
 
 ## vendor ##
-存放不能经由elpa安装的软件包
+零散的配置
 
 # 快捷键 #
 *C指的是ctrl键，M指的是alt键，S指的是shift键*
@@ -31,25 +35,13 @@ emacs.d
 * C-w **未选中区域时，剪切当前行**
 * M-w **未选中区域时，复制当前行**
 * C-] **跳到匹配的括号**
-* C-c e **调用hs-minor-mode折叠当前代码块**
-* C-c s **调用hs-minor-mode展开当前代码块**
-* C-c E **调用hs-minor-mode折叠所有代码块**
-* C-c S **调用hs-minor-mode展开所有代码块**
 * C-c h **光标移到左部窗口**
 * C-c l **光标移到右部窗口**
 * C-c k **光标移到上部窗口**
 * C-c j **光标移到下部窗口**
-* C-c b **quick-jump-go-back**
-* C-c f **quick-jump-go-forward**
-* C-c , **quick-jump-push-marker**
-* C-c / **quick-jump-clear-all-marker**
-* f4 **弹出ipython**
-* f5 **gdb调试功能**
 * f6 **平分窗口，启动eshell**
 * C-f6 **在当前窗口启动eshell**
 * C-l **在eshell中的作用是清屏**
-* f7 **开启speedbar**
-* S-f7 **隐藏speedbar**
 * f8 **开启/隐藏 neotree**
 * f11 **全屏**
 * C-k **光标在行首时，删除当前行**
