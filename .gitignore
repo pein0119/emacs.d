@@ -9,3 +9,5 @@ ac-comphist.dat
 session.*
 bookmarks
 tramp
+smex-items
+ido.last
