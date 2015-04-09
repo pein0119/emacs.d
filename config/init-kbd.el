@@ -103,7 +103,7 @@
 (global-set-key [f8] 'neotree-toggle)
 
 ;; 设置emacs全屏的快捷键为f11
-(global-set-key (kbd "<f11>") 'fullscreen-toggle) 
+(global-set-key (kbd "<f11>") 'toggle-frame-fullscreen) 
 
 ;; 下面是窗口的半透明效果的开启 
 (global-set-key (kbd "<f12>") 'loop-alpha) 

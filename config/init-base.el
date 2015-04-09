@@ -44,6 +44,9 @@
 ;; 不保存连续的重复的kill
 (setq kill-do-not-save-duplicates t)
 
+;; 启用多行注释
+(setq comment-multi-line t)
+
 ;; 不要闪烁光标
 (blink-cursor-mode -1)
 
@@ -75,3 +78,7 @@
 
 ;; eshell文件保存路径
 (setq eshell-directory-name (expand-file-name "eshell" savefile-dir))
+
+;; 配置emacs路径
+(setq path "/usr/local/opt/php54/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin")
+(setenv "PATH" path)
