@@ -16,7 +16,7 @@
 (load "nginx-settings.el")
 
 ;; 加载php的配置文件
-(load "php-settings.el")
+;;(load "php-settings.el")
 
 ;; 启用flychek
 (global-flycheck-mode t)
