@@ -13,9 +13,7 @@
 ;; 定义需要安装的软件包列表
 (defconst required-packages
   '(
-	;;;
-	dired+
-	dash
+	;;; 文件管理
     ;;; 颜色主题
 	monokai-theme						; 非常漂亮的水果色主题
     ;;; 增强UI功能
@@ -24,11 +22,13 @@
     smex                                ; 增强 M-x
     hlinum				                ; 高亮行号
 	popwin								; 关闭弹出缓冲区
+	powerline							; 状态栏
     ;;; 文件浏览工具
+	ace-jump-mode                       ; 在buffer间快速跳转
+	dired+
+	flx-ido                             ; 增强的ido模糊搜索
     ido-ubiquitous                      ; 在每个地方都使用ido
-    flx-ido                             ; 增强的ido模糊搜索
     ido-vertical-mode                   ; 垂直显示ido选项
-    ace-jump-mode                       ; 在buffer间快速跳转
     neotree 				            ; 文件浏览
 	;; 代码阅读
 	xcscope								; cscope的emacs前端

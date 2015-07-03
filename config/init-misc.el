@@ -53,3 +53,7 @@
  '(anzu-deactivate-region t)
  '(anzu-search-threshold 1000)
  '(anzu-replace-to-string-separator " => "))
+
+;; 状态栏
+(require 'powerline)
+(powerline-default-theme)
