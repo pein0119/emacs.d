@@ -11,5 +11,8 @@
 (ido-mode t)                
 (ido-everywhere)            
 (ido-ubiquitous-mode)       
-(flx-ido-mode)              
-(ido-vertical-mode)         
+(flx-ido-mode)
+
+(setq ido-vertical-define-keys 'C-n-and-C-p-only)
+(setq ido-vertical-show-count t)
+(ido-vertical-mode)

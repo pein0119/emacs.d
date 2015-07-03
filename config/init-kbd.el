@@ -130,3 +130,7 @@
 (defalias 'redo 'undo-tree-redo)
 (global-set-key (kbd "C-/") 'undo) 
 (global-set-key (kbd "C-.") 'redo) 
+
+;; anzu
+(global-set-key (kbd "M-%") 'anzu-query-replace)
+(global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)

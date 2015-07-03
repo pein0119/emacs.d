@@ -14,6 +14,7 @@
 (defconst required-packages
   '(
 	;;;
+	dired+
 	dash
     ;;; 颜色主题
 	monokai-theme						; 非常漂亮的水果色主题
