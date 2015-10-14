@@ -60,6 +60,8 @@
     js2-mode          
     ;; Python
     elpy				                ; 配置Python IDE
+	;; go
+	go-mode								; go模式
     )
 )
 

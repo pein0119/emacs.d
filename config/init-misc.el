@@ -17,6 +17,8 @@
 
 ;; 配置 auto-complete
 (load "autocomplete-settings.el")
+;; 配置gocode
+(load "go-autocomplete.el")
 
 ;; 配置 popwin
 (load "popwin-settings.el")
