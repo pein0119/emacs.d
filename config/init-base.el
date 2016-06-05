@@ -79,6 +79,3 @@
 ;; eshell文件保存路径
 (setq eshell-directory-name (expand-file-name "eshell" savefile-dir))
 
-;; 配置emacs路径
-(setq path "/usr/local/opt/php54/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin")
-(setenv "PATH" path)

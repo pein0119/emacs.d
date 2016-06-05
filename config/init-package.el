@@ -67,6 +67,8 @@
     elpy				                ; 配置Python IDE
 	;; go
 	go-mode								; go模式
+	;; other
+	exec-path-from-shell				; 配置环境变量
     )
 )
 
