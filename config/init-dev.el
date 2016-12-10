@@ -10,7 +10,7 @@
 (load "markdown-settings.el")
 
 ;; 配置Python开发环境
-(load "python-settings.el")
+;;(load "python-settings.el")
 
 ;; 加载nginx的配置文件
 (load "nginx-settings.el")

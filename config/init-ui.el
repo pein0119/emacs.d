@@ -37,3 +37,11 @@
 
 ;; 设置光标颜色为红色
 (set-cursor-color "red")
+
+;; 设置字体
+(if (eq system-type 'darwin)
+	(set-frame-font "Monaco:pixelsize=13")
+  (dolist (charset '(han kana symbol cjk-misc bopomofo))
+	(set-fontset-font (frame-parameter nil 'font)
+					  charset
+					  (font-spec :family "Hiragino Sans GB" :size ))))

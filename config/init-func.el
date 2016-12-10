@@ -28,7 +28,7 @@
         (save-buffer)
       ;; Clear buffer-modified flag caused by set-visited-file-name
       (set-buffer-modified-p nil))
-  (message "Renamed to %s" new-name)))
+    (message "Renamed to %s" new-name)))
 
 ;;将一行上移 下移
 ;;;###autoload
@@ -80,28 +80,28 @@
 ;; 复制当前行
 ;;;###autoload
 (global-set-key "\M-w"
-(lambda ()
-  (interactive)
-  (if mark-active
-      (kill-ring-save (region-beginning)
-      (region-end))
-    (progn
-     (kill-ring-save (line-beginning-position)
-     (line-end-position))
-     (message "copied line")))))
+                (lambda ()
+                  (interactive)
+                  (if mark-active
+                      (kill-ring-save (region-beginning)
+                                      (region-end))
+                    (progn
+                      (kill-ring-save (line-beginning-position)
+                                      (line-end-position))
+                      (message "copied line")))))
 
 ;; 剪切当前行
 ;;;###autoload
 (global-set-key "\C-w"
-(lambda ()
-  (interactive)
-  (if mark-active
-      (kill-region (region-beginning)
-   (region-end))
-    (progn
-     (kill-region (line-beginning-position)
-  (line-end-position))
-     (message "killed line")))))
+                (lambda ()
+                  (interactive)
+                  (if mark-active
+                      (kill-region (region-beginning)
+                                   (region-end))
+                    (progn
+                      (kill-region (line-beginning-position)
+                                   (line-end-position))
+                      (message "killed line")))))
 
 ;; 删除当前缓冲区对应的文件
 ;;;###autoload
@@ -127,7 +127,7 @@
   (interactive)
   (cond
    ((looking-at "[ \t]*[[\"({]") (forward-sexp) (backward-char))
-    ((or (looking-at "[]\")}]") (looking-back "[]\")}][ \t]*")) (if (< (point) (point-max)) (forward-char)) (backward-sexp))
+   ((or (looking-at "[]\")}]") (looking-back "[]\")}][ \t]*")) (if (< (point) (point-max)) (forward-char)) (backward-sexp))
    (t (message "找不到匹配的括号"))))
 
 ;;对eshell的一些配置
@@ -211,17 +211,17 @@ buffer is not visiting a file."
                          ;; if first parameter is '2', can toggle fullscreen status
                          '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
 
-;当前窗口和非当前窗口时透明度 
+                                        ;当前窗口和非当前窗口时透明度
 ;;;###autoload
 (setq alpha-list '((100 100) (95 65) (85 55) (75 45) (65 35)))
-(defun loop-alpha () 
-  (interactive) 
-  (let ((h (car alpha-list))) 
-    ((lambda (a ab) 
-       (set-frame-parameter (selected-frame) 'alpha (list a ab)) 
-       (add-to-list 'default-frame-alist (cons 'alpha (list a ab)))) 
-     (car h) (car (cdr h))) 
-    (setq alpha-list (cdr (append alpha-list (list h)))))) 
+(defun loop-alpha ()
+  (interactive)
+  (let ((h (car alpha-list)))
+    ((lambda (a ab)
+       (set-frame-parameter (selected-frame) 'alpha (list a ab))
+       (add-to-list 'default-frame-alist (cons 'alpha (list a ab))))
+     (car h) (car (cdr h)))
+    (setq alpha-list (cdr (append alpha-list (list h))))))
 
 ;; 复制当前文件名
 ;;;###autoload
@@ -234,3 +234,10 @@ buffer is not visiting a file."
     (when filename
       (kill-new filename)
       (message "Copied buffer file name '%s' to the clipboard." filename))))
+
+(defun iwb ()
+  "indent whole buffer"
+  (interactive)
+  (delete-trailing-whitespace)
+  (indent-region (point-min) (point-max) nil)
+  (untabify (point-min) (point-max)))

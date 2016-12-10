@@ -109,8 +109,11 @@
 (global-set-key (kbd "<f12>") 'loop-alpha) 
 
 ;;ace-jump-mode 的快捷键
-(key-chord-define-global "jj" 'ace-jump-mode)
-(key-chord-define-global "jl" 'ace-jump-line-mode)
+(key-chord-define-global "jj" 'avy-goto-word-1)
+(key-chord-define-global "jl" 'avy-goto-line)
+(key-chord-define-global "uu" 'undo-tree-visualize)
+(key-chord-define-global "xx" 'smex)
+(key-chord-define-global "yy" 'browse-kill-ring)
 
 ;;ace-jump-buffer 的快捷键
 (key-chord-define-global "jk" 'ace-jump-buffer)

@@ -36,4 +36,5 @@
         ("*Compile-Log*" :height 30 :stick t)
 		("*cscope*" :height 30 :stick t)
 		("*Man select*" :height 30 :stick t)
+		("*undo-tree*" :height 30 :stick t)
         ("*git-gutter:diff*" :height 30 :stick t)))

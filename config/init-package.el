@@ -4,14 +4,10 @@
 (setq load-prefer-newer t)
 
 (require 'package)
-(setq package-enable-at-startup nil)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/"))
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
-(add-to-list 'package-archives
-             '("elpy" . "https://jorgenschaefer.github.io/packages/"))
-;;(package-refresh-contents)
+(setq package-archives
+	  '(("gnu" . "https://elpa.gnu.org/packages/")
+		("marmalade" . "https://marmalade-repo.org/packages/")
+		("melpa" . "https://melpa.milkbox.net/packages/")))
 
 (package-initialize)
 
@@ -27,9 +23,9 @@
     smex                                ; 增强 M-x
     hlinum				                ; 高亮行号
 	popwin								; 关闭弹出缓冲区
-	powerline							; 状态栏
+	;; powerline							; 状态栏
+	spaceline							;状态栏
     ;;; 文件浏览工具
-	ace-jump-mode                       ; 在buffer间快速跳转
 	dired+
 	flx-ido                             ; 增强的ido模糊搜索
     ido-ubiquitous                      ; 在每个地方都使用ido
@@ -40,6 +36,7 @@
     ;;; 编辑功能
 	autopair							; 自动添加括号
 	ace-jump-mode						; 快速跳动某一字符
+	avy									; 快速跳转
     ace-jump-buffer						; 快速跳到某一缓冲区
     expand-region                       ; 根据语法单元增加选中区域
 	highlight-parentheses				; 为配对的括号配色
@@ -64,11 +61,12 @@
     ;; js
     js2-mode          
     ;; Python
-    elpy				                ; 配置Python IDE
+    ;; elpy				                ; 配置Python IDE
 	;; go
 	go-mode								; go模式
 	;; other
 	exec-path-from-shell				; 配置环境变量
+	which-key							; 快捷键提示
     )
 )
 

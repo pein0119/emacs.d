@@ -31,9 +31,9 @@
 (setq-default header-line-format
               '((which-func-mode ("" which-func-format " "))))
 (setq mode-line-misc-info
-	  ;; We remove Which Function Mode from the mode line, because it's mostly
-	  ;; invisible here anyway.
-	  (assq-delete-all 'which-func-mode mode-line-misc-info))
+      ;; We remove Which Function Mode from the mode line, because it's mostly
+      ;; invisible here anyway.
+      (assq-delete-all 'which-func-mode mode-line-misc-info))
 
 ;; 配置xcscope，浏览代码
 (require 'xcscope)
@@ -42,7 +42,6 @@
 ;; 配置redo undo
 (require 'undo-tree)
 (global-undo-tree-mode 1)
-
 
 ;; 状态栏显示搜索匹配次数
 (global-anzu-mode +1)
@@ -57,5 +56,12 @@
  '(anzu-replace-to-string-separator " => "))
 
 ;; 状态栏
-(require 'powerline)
-(powerline-default-theme)
+;; (require 'powerline)
+;; (powerline-default-theme)
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
+
+;; 快捷键提示
+(require 'which-key)
+(which-key-mode 1)
+(setq which-key-idle-delay 0.5)
