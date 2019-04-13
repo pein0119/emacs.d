@@ -1,9 +1,6 @@
 ;;; 配置开发环境
 
-;; 配置文件加载目录
-(add-to-list 'load-path "~/.emacs.d/vendor")
-
-;; 配置代码风格
+; 配置代码风格
 (load "codestyle-settings.el")
 
 ;; 加载markdown的配置文件

@@ -1,8 +1,5 @@
 ;;; 比较零散的配置
 
-;; 配置文件加载目录
-(add-to-list 'load-path "~/.emacs.d/vendor/")
-
 ;; ido的配置
 (load "ido-settings.el")
 
