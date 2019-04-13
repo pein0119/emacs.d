@@ -26,7 +26,7 @@
 	;; powerline							; 状态栏
 	spaceline							;状态栏
     ;;; 文件浏览工具
-	dired+
+	;;;dired+
 	flx-ido                             ; 增强的ido模糊搜索
     ido-ubiquitous                      ; 在每个地方都使用ido
     ido-vertical-mode                   ; 垂直显示ido选项
@@ -44,7 +44,7 @@
     multiple-cursors                    ; 多游标编辑
 	undo-tree							; 撤销、重做
     ;;; 搜索替换
-	ack									; 代码查找
+	ag									; 代码查找
     ;;; 自动补全和代码片段
     auto-complete			            ; 自动补全
     yasnippet				            ; 插入代码片段

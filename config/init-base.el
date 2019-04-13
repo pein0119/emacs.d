@@ -12,7 +12,7 @@
 (setq message-log-max 10000)
 
 ;; 设置默认工作目录
-(setq default-directory "~/workspace/") 
+;; (setq default-directory "~/workspace/") 
 
 ;; M-X 输入命令时有提示
 (icomplete-mode t)

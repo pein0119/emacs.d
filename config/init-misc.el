@@ -65,3 +65,6 @@
 (require 'which-key)
 (which-key-mode 1)
 (setq which-key-idle-delay 0.5)
+
+;; 搜索高亮
+(setq ag-highlight-search t)
